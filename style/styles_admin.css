@@ -1,0 +1,125 @@
+*{padding:0; margin:0;}
+body{background:#ffffff; color:#000; font-family:Tahoma; font-size:12px}
+a {color:#024c7b; text-decoration:none}
+a:hover{color:#ff0000}
+
+.admin_header {height:65px; background:url(images/admin/bg_admin_mn.jpg) repeat-x;}
+.admin_header_content {width:980px; margin:auto}
+.xcms_logo {border:#FFFFFF 1px solid; margin-top:2px; float:left}
+.main {width:1140px; margin:auto; border-left:#ffffff 1px solid; border-right:#ffffff 1px solid; background:#ffffff}
+.main .left {width:250px; float:left}
+.main .content {width:860px; float:right}
+.admin_footer {background:url(images/admin/bg_bottom.jpg) repeat-x}
+.admin_footer .content {width:980px; margin:auto; line-height:16px}
+
+.login {width:350px; margin-left:50px; margin-top:120px; margin-bottom:120px; border:#7f9db9 2px solid}
+.login .title {text-align:center; font-weight:bold; padding:5px 0px 5px 0px; background:#7f9db9; color:#fff}
+.input_text {border:#7f9db9 1px solid; height:20px}
+.button {border:#7f9db9 1px solid; background:#fff; font-weight:bold; height:24px; padding-left:5px; padding-right:5px; cursor:pointer}
+
+.adm_menu {}
+.adm_menu .title {text-align:center; font-weight:bold;}
+.adm_menu .menu {width:40%; text-align:center; font-weight:bold; font-size:11px}
+.adm_menu .menu a {color:#000; text-decoration:none}
+.adm_menu .menu a:hover {color:#ff0000}
+
+.admin_block {border:#7f9db9 1px solid; padding:5px; margin-bottom:10px}
+.admin_block .mod_title{background:url(images/admin/img_title.gif) left no-repeat; font-weight:bold; padding-left:10px}
+.admin_block .menu_child {text-align:center; font-weight:bold; font-size:11px}
+.admin_block .menu_child a {color:#024c7b; text-decoration:none}
+.admin_block .menu_child a:hover{color:#ff0000}
+
+.tbl_list {background:#d2e1eb}
+.tbl_list .rowtop {height:25px; text-align:center; font-weight:bold}
+.tbl_list .row {height:22px; text-align:center; background:#ffffff}
+.tbl_list .row2 {height:22px; text-align:center; background:#e8f1f6;}
+
+.pager{border-top:1px solid #fff}
+.pager a,.pager a:link,.pager a:active,.pager a:hover,.pager a:visited{
+	font-family:tahoma;
+	font-size:11px;
+	
+}
+.pager,.pager .page_current,.pager .page_item{
+	height:26px;
+	line-height:26px;
+	text-align:center;
+	background:#002e56;
+	font-family:tahoma;
+	font-size:11px
+}
+.pager .page_current,.pager .page_item,.pager .page_items{float:left}
+.pager .page_current{
+	display:block;
+	color:#fff;
+	font-weight:bold;
+	padding:0 10px;
+	background:#ff3600
+}
+.pager .page_item, .pager .page_item:link, .pager .page_item:visited{
+	color:#fff;
+	font-weight:bold;
+	border-left:1px solid #fff;
+	width:26px;
+	display:block;
+	float:left
+}
+.pager .page_item:hover,.pager .page_item_active{
+	color:#fff;
+	background-color:#006CCB;
+	text-decoration:underline
+}
+
+.pager .page_prev,.pager .page_next,
+.pager .page_first,.pager .page_last
+{background:url(images/pager.png) no-repeat left top}
+.pager .page_first{background-position:left -26px}
+.pager .page_first:hover{background-position:left -131px}
+.pager .page_prev{background-position:left -78px}
+.pager .page_prev:hover{background-position:left -183px}
+.pager .page_next{background-position:left -52px}
+.pager .page_next:hover{background-position:left -156px}
+.pager .page_last:hover{background-position:left -104px}
+/*them va0*/
+#finish { width: 682px; height:auto ;border-bottom: #CCCCCC solid 1px; padding: 0 0 5px 15px; line-height: 20px; margin-top: -15px;}
+#finish-sub { margin-left: 300px; margin-top: 5px; color:#2a94d5}
+.finish-l { float:left; text-align:left; padding-right: 30px; width: 50px;}
+.finish-r { float:left; padding-left: 10px; color:#2a94d5; text-align:left;}
+.finish-b { padding-left: 5px; color:#2a94d5}
+.add_imag{
+	width: 52px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin: 5px;
+}
+.add_imag:hover {
+  color: #4CAF50!important; 
+  background-color: #6d6b6b!important;
+}
+
+.add_video{
+	width: 52px;
+    background-color: red;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    font-size: 16px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    margin: 5px;
+}
+.add_video:hover {
+  color: red!important; 
+  background-color: #6d6b6b!important;
+}

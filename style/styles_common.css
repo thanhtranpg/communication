@@ -1,0 +1,95 @@
+/* ---- padding all ---- */
+.padding0,#padding0{padding:0}
+.padding2,#padding2{padding:2px}
+.padding5,#padding5{padding:5px}
+.padding8,#padding8{padding:8px}
+.padding10,#padding10{padding:10px}
+.padding15,#padding15{padding:15px}
+.padding20,#padding20{padding:20px}
+.padding25,#padding25{padding:25px}
+
+/* ---- padding top ---- */
+.paddingTop0,#paddingTop0{padding-top:0px}
+.paddingTop5,#paddingTop5{padding-top:5px}
+.paddingTop10,#paddingTop10{padding-top:10px}
+.paddingTop15,#paddingTop15{padding-top:15px}
+.paddingTop20,#paddingTop20{padding-top:20px}
+.paddingTop25,#paddingTop25{padding-top:25px}
+.paddingTop30,#paddingTop30{padding-top:30px}
+
+/* ---- padding bottom ---- */
+.paddingBottom0,#paddingBottom0{padding-bottom:0px}
+.paddingBottom5,#paddingBottom5{padding-bottom:5px}
+.paddingBottom10,#paddingBottom10{padding-bottom:10px}
+.paddingBottom15,#paddingBottom15{padding-bottom:15px}
+.paddingBottom20,#paddingBottom20{padding-bottom:20px}
+
+/* ---- padding left ---- */
+.paddingLeft0,#paddingLeft0{padding-left:0px}
+.paddingLeft5,#paddingLeft5{padding-left:5px}
+.paddingLeft10,#paddingLeft10{padding-left:10px}
+.paddingLeft15,#paddingLeft15{padding-left:15px}
+.paddingLeft20,#paddingLeft20{padding-left:20px}
+
+/* ---- padding right ---- */
+.paddingRight0,#paddingRight0{padding-right:0px}
+.paddingRight5,#paddingRight5{padding-right:5px}
+.paddingRight10,#paddingRight10{padding-right:10px}
+.paddingRight15,#paddingRight15{padding-right:15px}
+.paddingRight20,#paddingRight20{padding-right:20px}
+
+/* ---- margin all ---- */
+.margin0,#margin0{margin:0}
+.margin5,#margin5{margin:5px}
+.margin8,#margin8{margin:8px}
+.margin10,#margin10{margin:10px}
+.margin15,#margin15{margin:15px}
+.margin20,#margin20{margin:20px}
+
+/* ---- margin top ---- */
+.marginTop0,#marginTop0{margin-top:0px}
+.marginTop5,#marginTop5{margin-top:5px}
+.marginTop10,#marginTop10{margin-top:10px}
+.marginTop15,#marginTop15{margin-top:15px}
+.marginTop20,#marginTop20{margin-top:20px}
+
+/* ---- margin bottom ---- */
+.marginBottom0,#marginBottom0{margin-bottom:0px}
+.marginBottom5,#marginBottom5{margin-bottom:5px}
+.marginBottom10,#marginBottom10{margin-bottom:10px}
+.marginBottom15,#marginBottom15{margin-bottom:15px}
+.marginBottom20,#marginBottom20{margin-bottom:20px}
+.marginBottom30,#marginBottom30{margin-bottom:30px}
+
+/* ---- margin left ---- */
+.marginLeft0,#marginLeft0{margin-left:0px}
+.marginLeft5,#marginLeft5{margin-left:5px}
+.marginLeft10,#marginLeft10{margin-left:10px}
+.marginLeft15,#marginLeft15{margin-left:15px}
+.marginLeft20,#marginLeft20{margin-left:20px}
+
+/* ---- margin right ---- */
+.marginRight0,#marginRight0{margin-right:0px}
+.marginRight5,#marginRight5{margin-right:5px}
+.marginRight10,#marginRight10{margin-right:10px}
+.marginRight15,#marginRight15{margin-right:15px}
+.marginRight20,#marginRight20{margin-right:20px}
+
+/*----- clean & clear & effect -----*/
+.clear,#clear{ clear: both; overflow:hidden}
+.clear1,#clear1{clear: both; overflow:hidden;height:1px}
+.clear2,#clear2{ clear: both; overflow:hidden}
+.no_border, #no_border{border:0}
+.no_border_bottom, #no_border_bottom{border-bottom:0}
+
+.no_background, #no_background{background:none}
+.no_background_img, #no_background_img{background-image:none}
+.hidden,#hidden,.hide_item,#hide_item{display:none}
+.show,#show{display:block}
+.bold,#bold{font-weight:bold}
+.relative,#relative{position:relative}
+.justify,#justify{text-align:justify}
+
+/*------ float ------*/
+.float_left,#float_left{float:left}
+.float_right,#float_right{float:right}

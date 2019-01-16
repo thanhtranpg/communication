@@ -1,0 +1,41 @@
+.form-job__heading {
+  text-align: center;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 80px;
+  }
+}
+
+.form-job__input {
+  margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 30px;
+  }
+}
+
+.form-job__textarea {
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 60px;
+  }
+}
+
+.form-job__footer {
+  text-align: center;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 80px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 120px;
+  }
+}

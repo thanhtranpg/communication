@@ -1,0 +1,55 @@
+.card-client {
+  margin-bottom: 60px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 90px;
+  }
+}
+.card-client__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.card-client__heading {
+  margin-bottom: 60px;
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 90px;
+  }
+  &:after {
+    bottom: -40px;
+    @media screen and (min-width: 1440px) {
+      bottom: -50px;
+    }
+  }
+}
+
+.card-client__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-client__item {
+  width: calc(50% - 20px);
+  margin: 10px;
+  @media screen and (min-width: 1024px) {
+    width: calc(33.33% - 20px);
+    margin: 20px 10px;
+  }
+}
+
+.card-client__figure {
+  max-width: 140px;
+  max-height: 80px;
+  margin: 0 auto;
+  background-size: contain;
+  @media screen and (min-width: 768px) {
+    max-width: 180px;
+    max-height: 120px;
+  }
+  &:before {
+    max-width: 93.8px;
+    padding-top: 100%;
+  }
+}

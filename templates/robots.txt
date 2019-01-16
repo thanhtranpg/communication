@@ -1,0 +1,22 @@
+# Tran Quang Thanh
+# Email:tqt_tqt2001@yahoo.com
+# Mobie:0977806084
+
+User-agent: *
+
+
+
+
+# Files
+Disallow: /.htaccess
+Disallow: /core/config.php
+
+# Paths (clean URLs)
+Disallow: /admin/
+
+# Paths (no clean URLs)
+Disallow: /webadmin.php
+Disallow: /webadmin.php/
+Disallow: /webadmin.php?main=admin_login
+Disallow: /webadmin.php?main=admin_login/
+

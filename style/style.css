@@ -1,0 +1,481 @@
+/* CSS Document */
+
+body{
+	padding:0;
+	margin:0;
+	border:0;
+ /*	background:url(images/bg_web.png)/*tpa=http://www.stdvn.com/images/bg_web.png*/ repeat-x #FFFFFF;*/
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	line-height:140%;
+	color:#636466;
+}
+.bg_sale{
+	background:url(images/bg_lienhe_sale.jpg)/*tpa=http://www.stdvn.com/images/bg_lienhe_sale.jpg*/ repeat-x top;
+	border-radius: 7px;
+	height:25px;
+	color:#FFFFFF;
+}
+
+.bg_huanluyen{
+	background:url(images/bg_huanluyen.jpg)/*tpa=http://www.stdvn.com/images/bg_huanluyen.jpg*/ repeat-x top;
+	border-radius: 7px 7px 0 0;
+	height:23px;
+}
+.box_newslatter{
+	background-color:#FFFFFF;
+	height:18px;
+	border-radius: 7px;
+	padding:0 5px;
+	width:230px;
+}
+.bg_huankuyensub{
+	background:#f2f2f3;
+	border-radius: 0 0 7px 7px;
+	padding:7px;
+}
+.bg_huankuyenthree{
+	background:#f2f2f3;
+	border-radius: 7px;
+	padding:7px 7px 7px 15px;
+}
+#divicon{
+	background:url(images/icon_left_head.png)/*tpa=http://www.stdvn.com/images/icon_left_head.png*/ no-repeat left top 6px;
+	text-decoration:none;
+}
+#divicon:hover{
+	background:url(images/icon_left_head_over.png)/*tpa=http://www.stdvn.com/images/icon_left_head_over.png*/ no-repeat left top 6px;
+	text-decoration:none;
+}
+#diviconavtice{
+	background:url(images/icon_left_head_over.png)/*tpa=http://www.stdvn.com/images/icon_left_head_over.png*/ no-repeat left top 6px;
+	text-decoration:none;
+}
+#diviconsub{
+	background:url(images/icon_left_head_over.png)/*tpa=http://www.stdvn.com/images/icon_left_head_over.png*/ no-repeat left top 6px;
+	text-decoration:none;
+}
+#LoadLef{
+	float:left;
+  	top: 10px;
+    display: block;
+    padding: 0px;
+    position: fixed;
+    left: 0;
+    z-index: 99999;
+}
+#LoadRight{
+	float:right;
+  	top: 10px;
+    display: block;
+    padding: 0px;
+    position: fixed;
+    left: 0;
+    z-index: 99999;
+}
+  
+.top_bg{
+	background:url(images/top_bg.png)/*tpa=http://www.stdvn.com/images/top_bg.png*/ left bottom no-repeat;
+	height:125px;
+}
+.product_top{
+	background:url(images/product_top.jpg)/*tpa=http://www.stdvn.com/images/product_top.jpg*/ no-repeat;
+	height:22px;
+	font-size:17px;
+	color:#fff;
+	text-decoration:none;
+
+}
+.font_luotxem{
+	color:#333333;
+	font-size:11px;
+	font-weight:100;
+	font-style:italic;
+}
+.font_page{
+    color: #333;
+    padding: 0 4px;
+    text-decoration: none;
+	font-size:12px;
+}
+
+.font_link{
+	background:#0066FF;
+	border:1px solid #CCCCCC;
+    color: #FFFFFF;
+    padding: 0 4px;
+    text-decoration: none;
+	font-size:12px;
+}
+.font_links{
+	background:#FF0000;
+	border:1px solid #CCCCCC;
+    color: #333333;
+    padding: 0 4px;
+    text-decoration: none;
+	font-size:12px;
+}
+.product_center{
+	background:url(images/product_cener.jpg)/*tpa=http://www.stdvn.com/images/product_cener.jpg*/ repeat-y;
+}
+.product_bottom{
+	background:url(images/product_bottom.jpg)/*tpa=http://www.stdvn.com/images/product_bottom.jpg*/ no-repeat;
+	height:22px;
+}
+.product_bottombg{
+	background:url(images/product_bottombg.jpg)/*tpa=http://www.stdvn.com/images/product_bottombg.jpg*/ no-repeat;
+	height:22px;
+}
+.body_top{
+	background:url(images/body_top.png)/*tpa=http://www.stdvn.com/images/body_top.png*/ bottom no-repeat;
+	height:13px;
+}
+.body_bg{
+	background-color:#FFFFFF;
+}
+.bottom_bg{
+	background:url(images/bottom_bg.png)/*tpa=http://www.stdvn.com/images/bottom_bg.png*/ top no-repeat;
+	height:72px;
+}
+
+.search_bg{
+	background:url(images/search_bg.png)/*tpa=http://www.stdvn.com/images/search_bg.png*/ left no-repeat;
+	width:164px;
+	height:16px;
+}
+.search_box{
+	width:126px;
+	padding:2px 4px 0 8px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#666666;
+	text-decoration:none;
+	background:none;
+	border:0;
+	vertical-align:middle;
+}
+.search_box1{
+	width:126px;
+	padding:2px 4px 0 8px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#666666;
+	text-decoration:none;
+	background:#FFFFFF;
+	border:0;
+	vertical-align:middle;
+	border-radius:6px 0 0 6px;
+}
+.buttonOrange
+{
+	background-color:#006cb5;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size:12px;
+	color: #FFFFFF;
+	border: solid 1px #999999;
+    border-radius:4px; 
+	cursor:pointer;
+}
+.menu_line{
+	background:url(images/menu_line.png)/*tpa=http://www.stdvn.com/images/menu_line.png*/ no-repeat;
+	width:1px;
+	height:27px;
+}
+.menu_class{
+	padding:0 10px;
+	text-align:center;
+}
+.menu_class:hover{
+	background:url(images/menu_bg_hover.png)/*tpa=http://www.stdvn.com/images/menu_bg_hover.png*/ repeat-x;
+}
+.menu_class a{
+	color:#FFFFFF;
+	font-size:13px;
+	text-decoration:none;
+}
+.menu_class a:hover{
+	text-decoration:none;
+}
+.menu_active a{
+	color:#FFFFFF;
+	font-size:13px;
+	text-decoration:none;
+}
+.menu_active{
+	padding:0 10px;
+	text-align:center;
+	color:#FFFFFF;
+	font-size:13px;
+	text-decoration:none;
+	background:url(images/menu_bg_hover.png)/*tpa=http://www.stdvn.com/images/menu_bg_hover.png*/ repeat-x;
+}
+.font_4rum{
+	font-size:10px;
+	color:#828385;
+	text-align:center;
+}
+
+.left_top{
+	background:url(images/left_top.png)/*tpa=http://www.stdvn.com/images/left_top.png*/ no-repeat;
+	height:24px;
+}
+.left_center{
+	background:url(images/left_center.png)/*tpa=http://www.stdvn.com/images/left_center.png*/ repeat-y;
+}
+.left_bottom{
+	background:url(images/left_bottom.png)/*tpa=http://www.stdvn.com/images/left_bottom.png*/ no-repeat;
+	height:10px;
+}
+.left_title{
+	color:#fff;
+	font-size:14px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.left_class{
+	color:#636466;
+	font-size:13px;
+	text-decoration:none;
+}
+.left_class:hover{
+	color:#000000;
+	text-decoration:none;
+}
+.left_more{
+	font-size:10px;
+	color:#fefefe;
+	text-decoration:none;
+}
+.left_more:hover{
+	text-decoration:underline;
+}
+
+.left_detail_top{
+	background:url(images/left_detail_top.png)/*tpa=http://www.stdvn.com/images/left_detail_top.png*/ no-repeat;
+	height:24px;
+}
+.left_detail{
+	color:#FFFFFF;
+	font-size:13px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+.left_detail_bg{
+	background:url(images/left_detail_bg.png)/*tpa=http://www.stdvn.com/images/left_detail_bg.png*/ no-repeat;
+	height:24px;
+	border-bottom:1px #636466 solid;
+	padding-top:1px;
+	padding-left:25px;
+}
+.left_detail_last{
+	background:url(images/left_detail_bg.png)/*tpa=http://www.stdvn.com/images/left_detail_bg.png*/ no-repeat;
+	height:24px;
+	border:none;
+	padding-top:1px;
+	padding-left:25px;
+}
+.left_detail_class{
+	color:#636466;
+	font-size:13px;
+	text-decoration:none;
+}
+.left_detail_class:hover{
+	color:#000000;
+	text-decoration:none;
+}
+
+.right_title_bg{
+	background:url(images/right_title_bg.png)/*tpa=http://www.stdvn.com/images/right_title_bg.png*/ no-repeat;
+	height:24px;
+}
+.right_title{
+	font-size:17px;
+	color:#fff;
+	text-decoration:none;
+}
+
+.font_blue{
+	color:#0066b3;
+	text-decoration:none;
+}
+.font_blue_18{
+	color:#0066b3;
+	text-decoration:none;
+	font-size:18px;
+}
+.font_blue_18_b{
+	color:#0066b3;
+	text-decoration:none;
+	font-size:18px;
+	font-weight:bold;
+}
+.font_xam{
+	color:#636466;
+	text-decoration:none;
+}
+.font_xam_1{
+	color:#636466;
+	text-decoration:none;
+	line-height:25px;
+}
+.prod_home_title_bg{
+	background:url(images/prod_home_title_bg.png)/*tpa=http://www.stdvn.com/images/prod_home_title_bg.png*/ top no-repeat;
+	height:36px;
+}
+.font_white{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+.font_white:hover{
+	text-decoration:none;
+}
+.font_white_11{
+	color:#FFFFFF;
+	text-decoration:none;
+	font-size:11px;
+}
+.font_hotline{
+	color:#FFFFFF;
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.prod_content_top{
+	background:url(images/prod_content_top.png)/*tpa=http://www.stdvn.com/images/prod_content_top.png*/ no-repeat;
+	height:22px;
+}
+
+#div_prod_list{
+	width:916px;
+	height:auto;
+}
+#div_prod_list ul{
+	width:916px;
+	position:relative;
+	list-style:none;
+}
+#div_prod_list ul li{
+	position:relative;
+	float:left;
+	width:275px;
+	background:url(images/icon_3.png)/*tpa=http://www.stdvn.com/images/icon_3.png*/ left no-repeat;
+	padding-left:16px;
+}
+#div_prod_list ul li a{
+	font-size:12px;
+	color:#636466;
+	text-decoration:none;
+}
+.bg_login{
+	background:url(images/bg_login.png)/*tpa=http://www.stdvn.com/images/bg_login.png*/ no-repeat center;
+	color:#0066cc;
+	height:21px;
+}
+#div_prod_list ul li a:hover{
+	color:#000000;
+	text-decoration:none;
+}
+.font_red{
+	color:#FF0000;
+	font-style:italic;
+	font-size:11px;
+}
+.bg_border_sales{
+	border:1px solid #0066cc;
+	border-radius:7px;
+	padding:7px;
+}
+.bg_border_sub{
+	border:1px solid #0066cc;
+	border-radius:7px;
+}
+.bg_border_sub_01{
+	background-color:#0066FF;
+	border-radius:6px 6px 0 0;
+	color:#FFFFFF;
+	height:20px;
+}
+.class_input{
+	background:url(images/bg_huanluyen.jpg)/*tpa=http://www.stdvn.com/images/bg_huanluyen.jpg*/ repeat-x;
+	border-radius:6px;
+	color:#FFFFFF;
+}
+#div_prod_list ul li {
+position: relative;
+float: left;
+width: 275px;
+background: url(images/icon_3.png) left no-repeat;
+padding-left: 16px;
+}
+.box_input{
+	border-radius:5px;
+	height:20px;
+	color:#000000;
+	padding:0 5px;
+}
+.bg_submitpopup{
+	background:url(images/bg_login1.png)/*tpa=http://www.stdvn.com/images/bg_login1.png*/ no-repeat;
+	height:26px;
+	color:#FFFFFF;
+	font-size:12px;
+	width:93px;
+	padding-bottom:2px;
+	cursor:pointer;
+}
+.font_contact_bule{
+	color:#006699
+}
+.font_contact_bule14{
+	color:#006699;
+	font-size:16px;
+}
+.font_contact_black14{
+	color:#000000;
+	font-size:14px;
+	font-weight:bold;
+	margin-bottom:15px;
+	padding-bottom:10px;
+}
+.font_contact_red{
+	color:#FF0000;
+	font-size:18px;
+}
+.bg_reseller_box{
+	background:url(images/bg_reseller.jpg)/*tpa=http://www.stdvn.com/images/bg_reseller.jpg*/ repeat;
+	border-radius:7px;
+	padding:7px;
+}
+
+a.class_bule:link{ text-decoration:none; color:#0066cc;}
+a.class_bule:hover{ text-decoration:none; color:#0066cc;}
+a.class_bule:visited{ text-decoration:none; color:#0066cc;}
+
+a.class_redone { text-decoration:none; color:#FF0000;}
+
+a.class_yello:link{ text-decoration:none; color:#FFFF00;}
+a.class_yello:hover{ text-decoration:none; color:#FFFF00;}
+a.class_yello:visited{ text-decoration:none; color:#FFFF00;}
+
+a.class_while:link{ text-decoration:none; color:#FFFFFF;}
+a.class_while:hover{ text-decoration:none; color:#FFFFFF;}
+a.class_while:visited{ text-decoration:underline; color:#FFFFFF;}
+
+a.class_red:link{ text-decoration:none; color:#0066cc;}
+a.class_red:visited{ text-decoration:none; color:#0066cc;}
+a.class_red:hover{ text-decoration:none; color:#FF0000;}
+.rating {
+  unicode-bidi: bidi-override;
+direction: rtl;    display: inline;    font-size: 23px;
+}
+.rating > span {
+  display: inline-block;
+  position: relative;
+  width: 1.1em;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+   color: gold;
+}

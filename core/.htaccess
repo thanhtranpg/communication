@@ -1,0 +1,19 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+
+
+
+AuthName "Private Access - Please login"
+AuthType Basic
+AuthUserFile .htpassword
+require valid-user
+
+
+#ErrorDocument 404 -err-error.html
+#ErrorDocument 403 -err-error.html
+
+
+
+								
+			

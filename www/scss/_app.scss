@@ -1,0 +1,327 @@
+
+
+@font-face {
+  font-family: 'Maison Neue';
+  src: url('../assets/fonts/MaisonNeue-Medium.woff2') format('woff2'),
+  url('../assets/fonts/MaisonNeue-Medium.woff') format('woff'),
+  url('../assets/fonts/MaisonNeue-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+body, p, h1, h2, h3, h4, h5, figure, ul, li, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  font-family: "Maison Neue";
+  font-size: 14px;
+}
+
+.sub-title {
+  font-size: 20px;
+  line-height: 1.6;
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: 1500px) {
+    font-size: 30px;
+  }
+}
+
+
+.title {
+  @extend .sub-title;
+  font-family: "League Gothic";
+}
+
+.header-title {
+  @extend .title;
+  text-transform: uppercase;
+}
+
+.heading {
+  font-size: 78px;
+  font-family: "League Gothic";
+  font-weight: normal;
+  letter-spacing: 1.9px;
+  text-transform: uppercase;
+  @media screen and (min-width: 1024px) {
+    font-size: 126px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 136px;
+  }
+  @media screen and (min-width: 1500px) {
+    font-size: 146px;
+  }
+}
+
+.sub-heading {
+  font-family: "League Gothic";
+  font-size: 60px;
+  letter-spacing: 1.7px;
+  @media screen and (min-width: 1024px) {
+    font-size: 64px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 68px;
+  }
+  @media screen and (min-width: 1500px) {
+    font-size: 72px;
+  }
+}
+
+.p {
+  font-size: 16px;
+  line-height: 1.6;
+  @media screen and (min-width: 768px) {
+    font-size: 18px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 20px;
+  }
+  @media screen and (min-width: 1500px) {
+    font-size: 22px;
+  }
+}
+
+.p-bold {
+  font-weight: 700;
+}
+
+.p-small {
+  font-size: 14px;
+  line-height: 1.5;
+  @media screen and (min-width: 1440px) {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 1500px) {
+    font-size: 18px;
+  }
+}
+
+.label {
+  @extend .p-small;
+  text-transform: uppercase;
+}
+
+.link-menu {
+  @extend .p;
+  font-family: "League Gothic";
+
+}
+
+
+
+.sub-link {
+  @extend .p;
+  text-transform: uppercase;
+}
+
+.heading--underline {
+  position: relative;
+  &:after {
+    content: '';
+    width: 60px;
+    height: 8px;
+    position: absolute;
+    left: 50%;
+    bottom: -10px;
+    transform: translate3d(-50%, 0, 0);
+    background: #ff0000;
+    @media screen and (min-width: 768px) {
+      bottom: -15px;
+    }
+    @media screen and (min-width: 1440px) {
+      bottom: -20px;
+    }
+  }
+}
+
+.container {
+  padding: 0 20px;
+  @media screen and (min-width: 768px) {
+    padding: 0 40px;
+  }
+  @media screen and (min-width: 1024px) {
+    padding: 0 70px;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 0 90px;
+  }
+}
+
+.logo__figure {
+  position: relative;
+  max-width: 120px;
+  margin: 0 auto;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 1024px) {
+    max-width: 197px;
+    max-height: 80px;
+  }
+  &:before {
+    content: '';
+    max-width: 197px;
+    display: inline-block;
+    padding-top: percentage(80/197);
+  }
+}
+
+.nav__logo {
+  width: 197px;
+  max-width: 197px;
+  a {
+    display: block;
+  }
+}
+
+.col-60 {
+  width: 60%;
+}
+
+.small-img {
+  position: relative;
+  max-width: 94px;
+  margin: 0 auto 20px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 25px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 35px;
+  }
+  &:before {
+    content: '';
+    max-width: 93.8px;
+    display: inline-block;
+    padding-top: percentage(84/93.8);
+  }
+}
+
+
+.figure {
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  &:before {
+    content: '';
+    width: 100%;
+    display: inline-block;
+  }
+}
+
+.button {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  border-radius: 3px;
+  font-weight: 700;
+}
+
+.button-primary {
+  @extend .button;
+  max-width: 326px;
+  border: 1px solid #ff0000;
+  background: transparent;
+  &:hover {
+    background: #ff0000;
+  }
+}
+
+.button-secondary {
+  @extend .button;
+  width: 100%;
+  max-width: 254px;
+  border: 1px solid #ff0000;
+  background: #ff0000;
+  &:hover {
+    background: rgba(#ff0000, 0.6);
+    border-color: rgba(#ff0000, 0.6);
+  }
+}
+
+.form-input, .form-textarea {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  color: #808080;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: "Maison Neue";
+  padding: 10px 20px;
+}
+
+.form-input {
+  height: 50px;
+
+}
+
+.small-container {
+  max-width: 1140px;
+  padding: 0 20px;
+  margin: 0 auto;
+  @media screen and (min-width: 1440px){
+    padding: 0 30px;
+  }
+}
+
+.page-about-us {
+  .card-title__description {
+    max-width: 230px;
+    @media screen and (min-width: 768px){
+      max-width: 270px;
+    }
+    @media screen and (min-width: 1500px){
+      max-width: 320px;
+    }
+  }
+}
+
+.page-service {
+  .card-title__description {
+    max-width: 600px;
+    @media screen and (min-width: 1500px){
+      max-width: 750px;
+    }
+  }
+}
+
+.header {
+  .logo__figure {
+    margin: 0;
+  }
+}
+
+body.header__menu-active {
+  overflow: hidden;
+  .header__menu {
+    padding-top: 80px;
+    opacity: 1;
+    pointer-events: visible;
+  }
+
+  button.button-header {
+    i.fa-header-custom {
+      &:before {
+        content: "\f00d"!important;
+      }
+    }
+  }
+}

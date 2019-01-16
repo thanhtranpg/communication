@@ -1,0 +1,53 @@
+.card-title {
+  padding: 60px 0;
+  @media screen and (min-width: 1024px) {
+    padding: 80px 0;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 90px 0;
+  }
+}
+
+.card-title__container {
+  padding: 20px 0;
+  text-align: center;
+  color: #0d0d0d;
+  @media screen and (min-width: 1024px) {
+    padding: 40px 0;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 60px 0;
+  }
+}
+
+.card-title__heading {
+  margin-bottom: 40px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 50px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 70px;
+  }
+  @media screen and (min-width: 1500px) {
+    margin-bottom: 90px;
+  }
+  &.heading--underline {
+    &:after {
+      bottom: -20px;
+      @media screen and (min-width: 1024px) {
+        bottom: -25px;
+      }
+      @media screen and (min-width: 1440px) {
+        bottom: -35px;
+      }
+      @media screen and (min-width: 1500px) {
+        bottom: -45px;
+      }
+    }
+  }
+}
+
+.card-title__description {
+  margin: 0 auto;
+  padding: 0 20px;
+}

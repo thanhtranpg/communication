@@ -1,0 +1,147 @@
+.footer {
+  padding: 10px 0 0;
+  background: #0d0d0d;
+  @media screen and (min-width: 1024px) {
+    height: 120px;
+    padding: 0;
+  }
+}
+
+.footer__container {
+  height: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @media screen and (min-width: 1024px) {
+    padding-bottom: 0;
+    flex-direction: row;
+  }
+}
+
+nav.nav {
+  flex: 1;
+  width: 100%;
+}
+
+.nav__logo {
+  margin-bottom: 5px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+  }
+}
+
+.footer__list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  @media screen and (min-width: 1024px) {
+    justify-content: flex-end;
+  }
+}
+.footer__item {
+  margin: 0 4px;
+  @media screen and (min-width: 1024px) {
+    margin-left: 50px;
+  }
+  &:hover {
+    a {
+      color: rgba(#fff, 0.7);
+    }
+  }
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: all 0.5s ease-in-out;
+  }
+}
+
+.footer__center {
+  background: #808080;
+  color: #ffffff;
+}
+
+
+.footer__label {
+  margin-bottom: 10px;
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 1440px) {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(#fff, 0.8);
+  @media screen and (min-width: 1024px) {
+    padding: 40px 0;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 60px 0;
+  }
+}
+
+.footer__notice {
+  padding: 20px 0;
+  @media screen and (min-width: 1024px) {
+    padding: 30px 0;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 40px 0;
+  }
+}
+
+.footer__col {
+  &.col-60 {
+    width: 100%;
+    margin-bottom: 20px;
+    @media screen and (min-width: 1024px) {
+      width: 60%;
+    }
+  }
+  &.col-center {
+    width: 100%;
+    flex: auto;
+    margin-bottom: 20px;
+    @media screen and (min-width: 456px) {
+      width: 50%;
+    }
+    @media screen and (min-width: 1024px) {
+      flex: 1;
+    }
+  }
+  &.col-right {
+    @media screen and (min-width: 1280px) {
+      flex: 1;
+    }
+  }
+}
+
+.footer__social {
+  a {
+    display: inline-block;
+    margin: 0 20px;
+    &:first-child {
+      margin-left: 0;
+    }
+    i {
+      font-size: 30px;
+      color: #ffffff;
+      @media screen and (min-width: 1024px) {
+        font-size: 40px;
+      }
+      @media screen and (min-width: 1440px) {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+
