@@ -53,3 +53,307 @@
     padding-top: 100%;
   }
 }
+
+.card {
+  padding: 80px 0;
+  background: #0d0d0d;
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 100px 0;
+  }
+  @media screen and (min-width: 1440px) {
+    padding: 120px 0;
+  }
+  .card__container {
+    padding: 0 20px;
+    @media screen and (min-width: 768px) {
+      padding: 0 40px;
+    }
+    @media screen and (min-width: 1024px) {
+      padding: 0 60px;
+    }
+    @media screen and (min-width: 1280px) {
+      padding: 0 80px;
+    }
+    @media screen and (min-width: 1440px) {
+      padding: 0 100px;
+    }
+  }
+  .card__row {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      align-items: stretch;
+    }
+  }
+  .card__col {
+    &.card__col--left {
+      width: 100%;
+      margin-bottom: 40px;
+      color: #fff;
+      @media screen and (min-width: 1024px) {
+        width: 40%;
+        margin-bottom: 0;
+      }
+    }
+    &.card__col--right {
+      width: 100%;
+      @media screen and (min-width: 1024px) {
+        flex: 1;
+        padding-left: 50px;
+      }
+    }
+  }
+  .card__description {
+    margin-bottom: 20px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 40px;
+      max-width: 600px;
+      text-align: left;
+    }
+    @media screen and (min-width: 1280px) {
+
+    }
+    @media screen and (min-width: 1440px) {
+
+    }
+  }
+  .card__heading {
+    margin-bottom: 30px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+    }
+    @media screen and (min-width: 1024px) {
+      margin-bottom: 40px;
+      text-align: left;
+    }
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 50px;
+    }
+    @media screen and (min-width: 1440px) {
+      margin-bottom: 60px;
+    }
+    &.heading--underline {
+      &:after {
+        @media screen and (min-width: 1024px) {
+          left: 0;
+          transform: translate3d(0, 0, 0);
+        }
+      }
+    }
+  }
+  .card__col-header {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 35px;
+    @media screen and (min-width: 1024px) {
+      justify-content: flex-end;
+    }
+    p {
+      margin: 2px 10px 0;
+      white-space: nowrap;
+    }
+    .red-bar {
+      width: 254px;
+      height: 8px;
+      display: inline-block;
+      background: #ff0000;
+    }
+  }
+  .card__footer {
+    .button-primary {
+      margin: 0 auto;
+      @media screen and (min-width: 1024px) {
+        margin: 0;
+      }
+    }
+  }
+  .card__slide {
+    position: relative;
+  }
+  .card__bg-figure {
+    width: 70%;
+    max-width: 648px;
+    filter: grayscale(100%);
+    &:before {
+      padding-top: percentage(446/689);
+    }
+    &:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: rgba(#0d0d0d, 0.75);
+    }
+  }
+  .card__figure {
+    width: 100%;
+    max-width: 834px;
+    &:before {
+      padding-top: percentage(540/834);
+    }
+  }
+  .card__block-slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 30px;
+  }
+  .card__list {
+    width: 80%;
+    display: inline-block;
+  }
+  .card__hide-bg {
+    width: 100%;
+    position: absolute;
+    top: 34px;
+    left: 0;
+  }
+  .card__block-footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (min-width: 1024px) {
+      width: 80%;
+    }
+  }
+  .card__block-button {
+    display: flex;
+  }
+  .card__button-slider {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    background: transparent;
+    border: 1px solid #ff0000;
+    transition: all 0.5s ease-in-out;
+    i {
+      font-size: 20px;
+      color: #ff0000;
+      transition: all 0.5s ease-in-out;
+    }
+    &:hover {
+      background: #ff0000;
+      i {
+        color: #fff;
+      }
+    }
+  }
+  .card__number {
+    color: #fff;
+  }
+  &.card--left-img {
+    .card__row {
+      flex-direction: row-reverse;
+    }
+    .card__col-header {
+      flex-direction: row-reverse;
+    }
+    .card__block-footer {
+      flex-direction: row-reverse;
+    }
+    .card__block-slide {
+      justify-content: flex-start;
+    }
+    .card__col {
+      &.card__col--left {
+        width: 100%;
+        margin-bottom: 40px;
+        color: #fff;
+        @media screen and (min-width: 1024px) {
+          width: 40%;
+          margin-bottom: 0;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          flex-direction: column;
+        }
+        .card__footer {
+          @media screen and (min-width: 1024px) {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+          }
+          .button-primary {
+            @media screen and (min-width: 1024px) {
+              width: 100%;
+            }
+          }
+        }
+      }
+      &.card__col--right {
+        width: 100%;
+        @media screen and (min-width: 1024px) {
+          flex: 1;
+          padding-right: 50px;
+          padding-left: 0;
+        }
+      }
+    }
+    .card__hide-bg {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .card__description {
+      margin-bottom: 20px;
+      text-align: center;
+      @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+      }
+      @media screen and (min-width: 1024px) {
+        margin-bottom: 40px;
+        max-width: 600px;
+        text-align: right;
+      }
+      @media screen and (min-width: 1280px) {
+
+      }
+      @media screen and (min-width: 1440px) {
+
+      }
+    }
+    .card__heading {
+      text-align: center;
+      @media screen and (min-width: 768px) {
+      }
+      @media screen and (min-width: 1024px) {
+        margin-bottom: 40px;
+        text-align: right;
+      }
+      @media screen and (min-width: 1280px) {
+        margin-bottom: 50px;
+      }
+      @media screen and (min-width: 1440px) {
+        margin-bottom: 60px;
+      }
+      &.heading--underline {
+        &:after {
+          @media screen and (min-width: 1024px) {
+            left: auto;
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
