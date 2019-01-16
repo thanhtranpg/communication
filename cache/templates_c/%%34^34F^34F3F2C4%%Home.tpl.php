@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2019-01-16 07:46:32
+<?php /* Smarty version 2.6.26, created on 2019-01-16 08:22:05
          compiled from D:%5CCODE%5Ccode%5Ccommunication.com%5Ctemplates/Home/Home.tpl */ ?>
 
 <div class="page-home">
@@ -29,12 +29,12 @@
         </section>
         <section class="hero hero--sub-title">
             <div class="hero__container">
-                <figure class="figure hero__figure" style="background-image: url('/uploads/<?php echo $this->_tpl_vars['baner']['image']; ?>
+                <figure class="figure hero__figure" style="background-image: url('/uploads/<?php echo $this->_tpl_vars['banner']['image']; ?>
 ')"></figure>
                 <div class="hero__inner">
-                    <h1 class="sub-heading hero__heading heading--underline"><?php echo $this->_tpl_vars['baner']['title']; ?>
+                    <h1 class="sub-heading hero__heading heading--underline"><?php echo $this->_tpl_vars['banner']['title']; ?>
 </h1>
-                    <div class="p hero__description"><?php echo $this->_tpl_vars['baner']['description']; ?>
+                    <div class="p hero__description"><?php echo $this->_tpl_vars['banner']['description']; ?>
 
                     </div>
                     <a class="button-primary p">Services</a>
