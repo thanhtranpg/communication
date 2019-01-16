@@ -25,10 +25,10 @@
         </section>
         <section class="hero hero--sub-title">
             <div class="hero__container">
-                <figure class="figure hero__figure" style="background-image: url('/uploads/{$baner.image}')"></figure>
+                <figure class="figure hero__figure" style="background-image: url('/uploads/{$banner.image}')"></figure>
                 <div class="hero__inner">
-                    <h1 class="sub-heading hero__heading heading--underline">{$baner.title}</h1>
-                    <div class="p hero__description">{$baner.description}
+                    <h1 class="sub-heading hero__heading heading--underline">{$banner.title}</h1>
+                    <div class="p hero__description">{$banner.description}
                     </div>
                     <a class="button-primary p">Services</a>
                 </div>
