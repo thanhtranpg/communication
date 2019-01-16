@@ -22,7 +22,7 @@ class ServiceForm extends Form{
     global $display;
 
     $where = ' Where status =1 ';
-        $sql = "SELECT * FROM " . PREFIX_TABLE . "ourwork_cat $where ORDER BY ord desc ";
+        $sql = "SELECT * FROM " . PREFIX_TABLE . "ourwork_cat $where ORDER BY ord asc ";
         $result = DB::query($sql);
         $product_cat=array();
         if ($result)

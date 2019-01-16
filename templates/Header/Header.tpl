@@ -1,7 +1,7 @@
 <header class="header">
     <div class="container header__container">
         <div class="nav__logo">
-            <a href="/" target=""> <figure class="logo__figure" style="background-image: url('/uploads/{$logo.image}')"></figure></a>
+            <a href="/" > <figure class="logo__figure" style="background-image: url('/uploads/{$logo.image}')"></figure></a>
         </div>
         {if $main !='home'}
             <div class="header__title header-title">{$head_title}</div>
