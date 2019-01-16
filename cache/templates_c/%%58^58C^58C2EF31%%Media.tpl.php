@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2019-01-10 08:48:58
+<?php /* Smarty version 2.6.26, created on 2019-01-16 09:58:41
          compiled from D:%5CCODE%5Ccode%5Ccommunication.com%5Ctemplates/Media/Media.tpl */ ?>
 <?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
 smarty_core_load_plugins(array('plugins' => array(array('insert', 'getItemImage', 'D:\\CODE\\code\\communication.com\\templates/Media/Media.tpl', 4, false),)), $this); ?>

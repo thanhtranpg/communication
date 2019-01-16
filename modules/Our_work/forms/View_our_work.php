@@ -25,7 +25,7 @@ class View_our_workForm extends Form{
 		$where = ' Where status = 1';
     $where .= ' and catid = '.$catid;
     $start = 0;
-    $limit = 6;
+    $limit = 60;
 
     $ourworks = array();
     $sql_count = "SELECT count(id) as total_row FROM ".PREFIX_TABLE."ourwork $where ";
