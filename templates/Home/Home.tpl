@@ -4,9 +4,9 @@
             <div class="hero__container">
                 <figure class="figure hero__figure" style="background-image: url('/www/assets/imgs/Festival/MaskGroup47.png')"></figure>
                 <div class="hero__video">
-                    <video class="hero__clip" loop autoplay muted>
-                        <source src="../assets/video/DemoHiddenvideo.mp4" type="video/mp4">
-                    </video>
+                        <iframe class="hero__clip" src="https://www.youtube.com/embed/DWgmCN4ms74?autoplay=1&loop=1&mute=1" frameborder="0" allowFullScreen="allowFullScreen">
+
+                        </iframe>
                 </div>
                 <div class="hero__inner">
                     <div class="hero__content">
