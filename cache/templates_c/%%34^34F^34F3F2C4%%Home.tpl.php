@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2019-01-16 07:05:05
+<?php /* Smarty version 2.6.26, created on 2019-01-16 07:46:32
          compiled from D:%5CCODE%5Ccode%5Ccommunication.com%5Ctemplates/Home/Home.tpl */ ?>
 
 <div class="page-home">
@@ -12,11 +12,10 @@
                 </div>
                 <div class="hero__inner">
                     <div class="hero__content">
-                        <h1 class="heading hero__heading heading--underline">SOLUTIONS & TRUST</h1>
-                        <div class="p hero__description">Established in 2011 by communication experts with the aim to become a BTL agency
-                            with ultimate accountability and professionalism as well as a trusted partner for clients,
-                            we enable our clients to best interact with their consumers via various communication
-                            touchpoints through development and execution of event and activation campaigns.
+                        <h1 class="heading hero__heading heading--underline"><?php echo $this->_tpl_vars['home_title']; ?>
+</h1>
+                        <div class="p hero__description"><?php echo $this->_tpl_vars['home_description']; ?>
+
                         </div>
                         <div class="hero__cta">
                             <a class="button-primary p" href="about-us.html" target="_blank">About Us</a>
@@ -30,56 +29,16 @@
         </section>
         <section class="hero hero--sub-title">
             <div class="hero__container">
-                <figure class="figure hero__figure" style="background-image: url('../assets/imgs/Festival/MaskGroup47.png')"></figure>
+                <figure class="figure hero__figure" style="background-image: url('/uploads/<?php echo $this->_tpl_vars['baner']['image']; ?>
+')"></figure>
                 <div class="hero__inner">
-                    <h1 class="sub-heading hero__heading heading--underline">EVENT & ACTIVATION</h1>
-                    <div class="p hero__description">We provide our clients with various BTL services of event management including Festival, Music
-                        Platform, Fashion Show, Consumer Engagement Event and so on. At ST Communications, we attach
-                        ultimate care  and highest caution to any project that we implement.
+                    <h1 class="sub-heading hero__heading heading--underline"><?php echo $this->_tpl_vars['baner']['title']; ?>
+</h1>
+                    <div class="p hero__description"><?php echo $this->_tpl_vars['baner']['description']; ?>
+
                     </div>
                     <a class="button-primary p">Services</a>
                 </div>
             </div>
         </section>
-    </div>
-
-
-
-<form name="frmContact" id="frmContact"  method="post">
-                        <input type="hidden" name="form_block" value="Contact">
-                    
-                            <label>Họ và tên:</label>
-                            <input type="text" class="form-control" name="txtName" id="txtName" required data-validation-required-message="Please enter your name.">
-                            
-                            <label>txtCompany</label>
-                            <input type="tel" class="form-control" name="txtCompany" id="txtCompany" required data-validation-required-message="Please enter your phone number.">
-                    
-                            <label>Email Address:</label>
-                            <input type="email" class="form-control" name="txtEmail" id="txtEmail" required data-validation-required-message="Please enter your email address.">
-                        
-                            <label>Nội dung:</label>
-                            <textarea rows="10" cols="100" class="form-control" name="txtDetail" id="txtDetail" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
-
-                    <button id="send_email_contact" type="button" class="btn btn-primary">Gửi</button>
-                    
-                 </form>
-
-
-                 <?php echo $this->_tpl_vars['baner']['title']; ?>
-</br>
-<?php echo $this->_tpl_vars['baner']['description']; ?>
-</br>
-<?php echo $this->_tpl_vars['baner']['image']; ?>
-
-
-
-<?php echo $this->_tpl_vars['home_url']; ?>
-</br>
-<?php echo $this->_tpl_vars['youtube_id_background']; ?>
-</br>
-<?php echo $this->_tpl_vars['youtube_id_play']; ?>
-</br>
-<?php echo $this->_tpl_vars['home_title']; ?>
-</br>
-<?php echo $this->_tpl_vars['home_description']; ?>
-</br>
+    </div>

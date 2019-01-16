@@ -1,4 +1,4 @@
-<?php /* Smarty version 2.6.26, created on 2019-01-16 07:08:42
+<?php /* Smarty version 2.6.26, created on 2019-01-16 07:38:14
          compiled from D:%5CCODE%5Ccode%5Ccommunication.com%5Ctemplates/Header/Header.tpl */ ?>
 <header class="header">
     <div class="container header__container">
@@ -6,7 +6,10 @@
             <a href="/" target=""> <figure class="logo__figure" style="background-image: url('/uploads/<?php echo $this->_tpl_vars['logo']['image']; ?>
 ')"></figure></a>
         </div>
-        <div class="header__title header-title"></div>
+        <?php if ($this->_tpl_vars['main'] != 'home'): ?>
+            <div class="header__title header-title"><?php echo $this->_tpl_vars['head_title']; ?>
+</div>
+        <?php endif; ?>
         <div class="header__nav">
             <button class="button-header" ng-click="toggle = !toggle">
                 <i class="fa fa-header-custom" aria-hidden="true"></i>

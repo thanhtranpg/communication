@@ -53,7 +53,8 @@ class HeaderForm extends Form
           while ($row = mysql_fetch_assoc($arr))
            $display->add('logo',$row);
         }
-
+        $display->add('main', $main);
+        $display->add('head_title', CGlobal::$website_title);
         $display->add('menuArr', $menuArr);
        	$display->add('home_url',WEB_ROOT);
         $display->add('facebooklink', CGlobal::$configs['facebooklink']);

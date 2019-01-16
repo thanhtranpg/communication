@@ -13,9 +13,10 @@ class HomeForm extends Form{
 
 		$sql = "SELECT * FROM ".PREFIX_TABLE."adv WHERE status = 1 and catid=2  ORDER BY ord Desc limit 1";
         $arr = DB::query($sql);   
+
         if (!empty($arr))
         {
-          while ($row = mysql_fetch_assoc($arr))
+          while ($row = mysql_fetch_assoc($arr)) 
            $display->add('banner',$row);
         }
 

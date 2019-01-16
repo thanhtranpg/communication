@@ -3,7 +3,9 @@
         <div class="nav__logo">
             <a href="/" target=""> <figure class="logo__figure" style="background-image: url('/uploads/{$logo.image}')"></figure></a>
         </div>
-        <div class="header__title header-title"></div>
+        {if $main !='home'}
+            <div class="header__title header-title">{$head_title}</div>
+        {/if}
         <div class="header__nav">
             <button class="button-header" ng-click="toggle = !toggle">
                 <i class="fa fa-header-custom" aria-hidden="true"></i>
