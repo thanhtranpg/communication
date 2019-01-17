@@ -746,7 +746,8 @@ body.header__menu-active button.button-header i.fa-header-custom:before {
     text-align: left; } }
 .card .card__heading {
   margin-bottom: 30px;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 @media screen and (min-width: 1024px) {
   .card .card__heading {
     margin-bottom: 40px;
@@ -785,7 +786,11 @@ body.header__menu-active button.button-header i.fa-header-custom:before {
   .card .card__footer .button-primary {
     margin: 0; } }
 .card .card__slide {
-  position: relative; }
+  position: relative;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; }
 .card .card__bg-figure {
   width: 70%;
   max-width: 648px;
@@ -859,6 +864,8 @@ body.header__menu-active button.button-header i.fa-header-custom:before {
   flex-direction: row-reverse; }
 .card.card--left-img .card__block-slide {
   justify-content: flex-start; }
+.card.card--left-img .card__slide {
+  align-items: flex-start; }
 .card.card--left-img .card__col.card__col--left {
   width: 100%;
   margin-bottom: 40px;
@@ -1541,7 +1548,7 @@ nav.nav {
   padding: 0;
   margin: 0;
   max-width: 100%;
-  height: 100vh;
+  height: auto;
   max-height: 1080px; }
 .form-home__figure:before {
   max-width: 100%;
