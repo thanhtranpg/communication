@@ -46,12 +46,12 @@ body {
   font-weight: normal;
   letter-spacing: 1.9px;
   text-transform: uppercase; }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1280px) {
     .heading {
-      font-size: 126px; } }
+      font-size: 112px; } }
   @media screen and (min-width: 1440px) {
     .heading {
-      font-size: 136px; } }
+      font-size: 126px; } }
   @media screen and (min-width: 1500px) {
     .heading {
       font-size: 146px; } }
