@@ -1,6 +1,3 @@
-</br>
-</br>
-</br>
 <div class="page-about-us">
     <section class="hero">
         <div class="hero__container">
