@@ -76,9 +76,9 @@
  <link href="<?php echo STATIC_URL;?>style/styles_common.css" rel="stylesheet" type="text/css" />
 <?php  } else{?>
       <!-- Bootstrap Core CSS -->
-    <link rel="stylesheet" href="<?php echo STATIC_URL;?>www/assets/css/main.css">
-    <link rel="stylesheet" href="<?php echo STATIC_URL;?>www/assets/dist/aos.css">
-    <link rel="stylesheet" href="<?php echo STATIC_URL;?>www/assets/css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="<?php echo STATIC_URL;?>www/assets/css/main.css?v=<?php echo CGlobal::$version; ?>" >
+    <link rel="stylesheet" href="<?php echo STATIC_URL;?>www/assets/dist/aos.css?v=<?php echo CGlobal::$version; ?>">
+    <link rel="stylesheet" href="<?php echo STATIC_URL;?>www/assets/css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css?v=<?php echo CGlobal::$version; ?>">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
 

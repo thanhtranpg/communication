@@ -1,5 +1,5 @@
-<script src="<?php echo STATIC_URL;?>www/assets/dist/aos.js"></script>
-<script src="<?php echo STATIC_URL;?>www/assets/js/javascript.js"></script>
+<script src="<?php echo STATIC_URL;?>www/assets/dist/aos.js?v=<?php echo CGlobal::$version; ?>"></script>
+<script src="<?php echo STATIC_URL;?>www/assets/js/javascript.js?v=<?php echo CGlobal::$version; ?>"></script>
 <script type="text/javascript">
 
   $('#send_email_contact').click(function(){
