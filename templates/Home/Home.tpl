@@ -37,18 +37,15 @@
                 </div>
             </div>
         </section>
-        <section class="card">
+        {foreach from=$ourwork_cat name=ourwork item=ourwork}
+        <section class="card {if $smarty.foreach.ourwork.iteration % 2 == 0} card--left-img {/if}" >
             <div class="card__container">
                 <div class="card__row">
                     <div class="card__col card__col--left" data-aos="fade-up">
-                        <h5 class="sub-heading card__heading heading--underline">Festival</h5>
-                        <div class="card__description p">ST Communications is always ready for the
-                            festive season!
-                            We create large-scale festivals not only to bring
-                            people together, enhance your brand -
-                            awareness, but also to entertain and inspire.</div>
+                        <h5 class="sub-heading card__heading heading--underline">{$ourwork.title}</h5>
+                        <div class="card__description p">{$ourwork.description}</div>
                         <div class="card__footer">
-                            <a class="button-primary" href="work.html">OUR WORKS</a>
+                            <a class="button-primary" href="{$ourwork.href}">OUR WORKS</a>
                         </div>
                     </div>
                     <div class="card__col card__col--right" data-aos="fade-up">
@@ -81,51 +78,8 @@
                 </div>
             </div>
         </section>
-        <section class="card card--left-img">
-            <div class="card__container">
-                <div class="card__row">
-                    <div class="card__col card__col--left" data-aos="fade-up">
-                        <h5 class="sub-heading card__heading heading--underline">MUSIC PLATFORM</h5>
-                        <div class="card__description p">Whether you like to bop your head to the latest
-                            tracks available, rock out in amazement with our
-                            special stage effects, hum alongside popular
-                            tunes or just simply enjoy a top-star lineup —
-                            there’s a concert out there that ST
-                            Communications design especially for you.</div>
-                        <div class="card__footer">
-                            <a class="button-primary" href="work.html">OUR WORKS</a>
-                        </div>
-                    </div>
-                    <div class="card__col card__col--right" data-aos="fade-up">
-                        <div class="card__col-header">
-                            <p class="label">Our works</p>
-                            <span class="red-bar"></span>
-                        </div>
-                        <div class="card__slide">
-                            <div class="card__hide-bg">
-                                <figure class="figure card__bg-figure" style="background-image: url('https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')"></figure>
-                            </div>
-                            <div class="card__block-slide">
-                                <div class="card__list">
-                                    <div class="card__item">
-                                        <figure class="figure card__figure" style="background-image: url('https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')"></figure>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card__block-footer">
-                                <div class="card__block-button">
-                                    <button class="card__button-slider"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-                                    <button class="card__button-slider"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
-                                </div>
-                                <div class="card__number">
-                                    <span class="number">3</span>/<span class="number">9</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        {/foreach}
+        
         <section class="form-home">
             <figure class="figure form-home__figure" style="background-image: url('../../www/assets/imgs/OurWorks/Demo hover BCSV.png')"></figure>
             <div class="form-contact form-contact--home">
@@ -133,14 +87,15 @@
                     <div class="form-contact__content">
                         <div class="form-contact__col form-contact__col--left" data-aos="fade-up">
                             <h5 class="form-contact__heading sub-heading heading--underline">CONTACT US</h5>
+                            <div class="message_email"></div>
                             <form class="form-contact__form">
-                                <input class="form-input form-contact__input" placeholder="Full Name"/>
-                                <input class="form-input form-contact__input" placeholder="Email Address"/>
-                                <input class="form-input form-contact__input" placeholder="Company/Organization"/>
-                                <textarea class="form-textarea form-contact__textarea" rows="8">Project Detail</textarea>
+                                <input class="form-input form-contact__input" placeholder="Full Name" name="txtName" id="txtName" required/>
+                                <input class="form-input form-contact__input" placeholder="Email Address" name="txtEmail" id="txtEmail" required />
+                                <input class="form-input form-contact__input" placeholder="Company/Organization" name="txtCompany" id="txtCompany" required />
+                                <textarea class="form-textarea form-contact__textarea" rows="8" name="txtDetail" id="txtDetail" required >Project Detail</textarea>
                             </form>
                             <div class="form-contact__footer"">
-                                <button class="button-secondary">SEND</button>
+                                <button class="button-secondary" id="send_email_contact" >SEND</button>
                             </div>
                         </div>
                     </div>
