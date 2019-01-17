@@ -24,7 +24,7 @@
             <div class="card-service__list">
             	{foreach from=$ourwork_cat name=ourwork item=ourwork}
 					<div class="card-service__item" data-aos="fade-up">
-                    <a href="{$ourwork.href}" target="_blank">
+                    <a href="{$ourwork.href}" >
                         <figure class="card-service__figure small-img" style="background-image: url('/uploads/{$ourwork.image}')"></figure>
                         <h5 class="card-service__title sub-title">
                             {$ourwork.title}
