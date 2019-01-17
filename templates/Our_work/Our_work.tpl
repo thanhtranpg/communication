@@ -16,7 +16,7 @@
               </span>
               {foreach from=$ourwork_cats name=ourwork_cat item=ourwork_cat}
                 <span class="tabs__name" data-aos="fade-up">
-                  <a href="{$ourwork_cat.href}"  class="link-menu" target="_blank">{$ourwork_cat.title}</a>
+                  <a href="{$ourwork_cat.href}"  class="link-menu" >{$ourwork_cat.title}</a>
                 </span>
             {/foreach}
             </div>

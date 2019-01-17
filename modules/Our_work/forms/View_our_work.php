@@ -24,26 +24,34 @@ class View_our_workForm extends Form{
     $catid = System::getParamInt('catid');
 		$where = ' Where status = 1';
     $where .= ' and catid = '.$catid;
-    $start = 0;
-    $limit = 60;
+    $page_no = (System::getParamInt('page_no') == 0) ? 1 : System::getParamInt('page_no');
 
     $ourworks = array();
     $sql_count = "SELECT count(id) as total_row FROM ".PREFIX_TABLE."ourwork $where ";
     $total = DB::fetch($sql_count, 'total_row', 0);
-    $sql = "SELECT * FROM ".PREFIX_TABLE."ourwork $where  ORDER BY id desc limit $start,$limit";
-    $arr = DB::fetch_all($sql);   
-    $our_work_content = "";
-    $ourwork_corver = [];
-    if (!empty($arr))
-    {
-      foreach ($arr as $item){
-        if( sizeof($ourwork_corver) <=0 ) {
-          $ourwork_corver['id'] = $item['id'];
-          $ourwork_corver['image'] = $item['image'];
+    $pagingData = '';
+        if ($total)
+        {
+            $limit = '';
+            require_once ROOT_PATH . 'core/Paging.php';
+            $item_per_page = 6;
+            Paging::page($pagingData, $limit, $total, $item_per_page, 5, 'page_no');
+            $sql = "SELECT * FROM ".PREFIX_TABLE."ourwork $where  ORDER BY id desc $limit";
+            $arr = DB::fetch_all($sql);   
+            $our_work_content = "";
+            $ourwork_corver = [];
+            if (!empty($arr))
+            {
+              foreach ($arr as $item){
+                if( sizeof($ourwork_corver) <=0 ) {
+                  $ourwork_corver['id'] = $item['id'];
+                  $ourwork_corver['image'] = $item['image'];
+                }
+                $ourworks[] = $item;
+              }
+            }
         }
-        $ourworks[] = $item;
-      }
-    }
+    $display->add('pagingData', $pagingData);
     $display->add('ourworks', $ourworks);
 		$display->add('banner',$this->banner);
     $display->add('ourwork_corver',$ourwork_corver);

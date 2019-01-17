@@ -37,14 +37,13 @@ class Paging{
 		$url_path = Url::build_all(array($page_name=>1),false,$page_name);		
 
 		//Trang hien thoi
-		$st .= '<li class="page_current"><a href="javascript:void(0)">Page '.$currentpage.'/'. $totalpage.'</a></li>';
+		//$st .= '<li class="page_current"><a href="javascript:void(0)">Page '.$currentpage.'/'. $totalpage.'</a></li>';
 		//Link den trang truoc
-		if($currentpage>1){
+
 			//link den trang dau tien
 			$st .='<li><a class="page_item page_first" href="'. Url::build_all(array($page_name=>1),false).'" title="First"> &laquo; </a></li>';
 			
-			$st .= '<li><a href="'. Url::build_all(array($page_name=>$currentpage-1),false).'" class="page_item page_prev" title="Previous"> &#60; </a></li>';
-		}
+			
 
 		//Danh sach cac trang
 		$st .= '';
@@ -87,11 +86,9 @@ class Paging{
 		}
 		$st .= '';
 		//Trang sau
-		if($currentpage<$totalpage){
-			$st .= '<li><a  href="'.Url::build_all(array($page_name=>$currentpage+1),false).'" class="page_item page_next" title="next"> &#62; </a></li>';
-			//trang cuoi cung
+
 			$st .='<li><a class="page_item page_last" href="'.Url::build_all(array($page_name=>$totalpage),false).'" title="Last"> &raquo; </a></li>';
-		}
+
 		
 		$st .= '</ul>';
 		return;

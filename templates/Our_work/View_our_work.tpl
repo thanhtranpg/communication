@@ -28,6 +28,9 @@
                 </div>
 				{/foreach}
             </div>
+            <div class="">
+                {$pagingData}
+            </div>
         </div>
     </div>
 </div>
