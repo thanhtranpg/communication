@@ -1,6 +1,6 @@
 <?php
 class CGlobal{
-	static $version	=1.0;
+	static $version	= 2.0;
 	
 	static $js_ver	=1.0;
 	static $css_ver	=1.0;	

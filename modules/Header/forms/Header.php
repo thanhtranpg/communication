@@ -53,12 +53,19 @@ class HeaderForm extends Form
           while ($row = mysql_fetch_assoc($arr))
            $display->add('logo',$row);
         }
+        if($main =='event'){
+          $head_title = 'Events';
+        }else{
+          $head_title = CGlobal::$website_title;
+        }
         $display->add('main', $main);
-        $display->add('head_title', CGlobal::$website_title);
+        $display->add('head_title',$head_title );
         $display->add('menuArr', $menuArr);
        	$display->add('home_url',WEB_ROOT);
         $display->add('facebooklink', CGlobal::$configs['facebooklink']);
         $display->add('youtubelink', CGlobal::$configs['youtubelink']);
+        $display->add('about_link',Url::build('about_us'));
+        $display->add('service_link',Url::build('service'));
         
         $display->output("Header");
 
