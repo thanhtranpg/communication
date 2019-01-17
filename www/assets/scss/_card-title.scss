@@ -18,9 +18,13 @@
   @media screen and (min-width: 1440px) {
     padding: 60px 0;
   }
+  .page-sub-work & {
+    padding: 0;
+  }
 }
 
 .card-title__heading {
+  padding: 0 20px;
   margin-bottom: 40px;
   @media screen and (min-width: 1024px) {
     margin-bottom: 50px;
@@ -30,6 +34,9 @@
   }
   @media screen and (min-width: 1500px) {
     margin-bottom: 90px;
+  }
+  .page-sub-work & {
+    margin-bottom: 0px;
   }
   &.heading--underline {
     &:after {

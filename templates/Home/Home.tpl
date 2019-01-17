@@ -4,9 +4,12 @@
             <div class="hero__container">
                 <figure class="figure hero__figure" style="background-image: url('/www/assets/imgs/Festival/MaskGroup47.png')"></figure>
                 <div class="hero__video">
-                        <iframe class="hero__clip" src="https://www.youtube.com/embed/DWgmCN4ms74?autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowFullScreen="allowFullScreen">
+                    <div class="tv">
+                        <div class="screen mute" id="tv" _youtubeID="Zr1jAVkYOV4" _endSeconds="30" ></div>
+                        {*<iframe class="hero__clip" src="https://www.youtube.com/embed/DWgmCN4ms74?autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowFullScreen="allowFullScreen">*}
 
-                        </iframe>
+                        {*</iframe>*}
+                    </div>
                 </div>
                 <div class="hero__inner">
                     <div class="hero__content">
@@ -136,7 +139,7 @@
                                 <input class="form-input form-contact__input" placeholder="Company/Organization"/>
                                 <textarea class="form-textarea form-contact__textarea" rows="8">Project Detail</textarea>
                             </form>
-                            <div class="form-contact__footer" data-aos="fade-up">
+                            <div class="form-contact__footer"">
                                 <button class="button-secondary">SEND</button>
                             </div>
                         </div>

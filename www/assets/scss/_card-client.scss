@@ -68,19 +68,7 @@
     padding: 120px 0;
   }
   .card__container {
-    padding: 0 20px;
-    @media screen and (min-width: 768px) {
-      padding: 0 40px;
-    }
-    @media screen and (min-width: 1024px) {
-      padding: 0 60px;
-    }
-    @media screen and (min-width: 1280px) {
-      padding: 0 80px;
-    }
-    @media screen and (min-width: 1440px) {
-      padding: 0 100px;
-    }
+    @extend .container;
   }
   .card__row {
     @media screen and (min-width: 1024px) {
@@ -217,14 +205,19 @@
     margin-bottom: 30px;
   }
   .card__list {
-    width: 80%;
-    display: inline-block;
+    width: 100%;
+    @media screen and (min-width: 1024px) {
+      width: 80%;
+    }
   }
   .card__hide-bg {
     width: 100%;
     position: absolute;
     top: 34px;
     left: 0;
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
   }
   .card__block-footer {
     width: 100%;
@@ -315,9 +308,11 @@
       }
     }
     .card__hide-bg {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
+      @media screen and (min-width: 1024px) {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
     }
     .card__description {
       margin-bottom: 20px;
