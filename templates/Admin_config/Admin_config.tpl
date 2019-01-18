@@ -33,6 +33,9 @@
          <div class="float_left marginRight10" style="width:35%; text-align:right">Youtube ID Background</div>
         <div class="float_left"><input type="input" id="youtube_id" name="youtube_id" class="input_text" style="width:400px" value="{$item.youtube_id}"></div>
         <div class="clear paddingBottom5"></div>
+        <div class="float_left marginRight10" style="width:35%; text-align:right">Thời lượng loop video Background ( s )</div>
+        <div class="float_left"><input type="input" id="endSecond" name="endSecond" class="input_text" style="width:400px" value="{$item.endSecond}"></div>
+        <div class="clear paddingBottom5"></div>
         <div class="float_left marginRight10" style="width:35%; text-align:right">Youtube ID Play</div>
         <div class="float_left"><input type="input" id="youtube_id_play" name="youtube_id_play" class="input_text" style="width:400px" value="{$item.youtube_id_play}"></div>
         <div class="clear paddingBottom5"></div>

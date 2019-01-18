@@ -44,6 +44,7 @@ class HomeForm extends Form{
           }
         $display->add('ourwork_cat', $product_cat);
         $display->add('youtube_id_background', CGlobal::$configs['youtube_id']);
+        $display->add('endSecond', CGlobal::$configs['endSecond']);
         $display->add('youtube_id_play', CGlobal::$configs['youtube_id_play']);
         $display->add('home_title', CGlobal::$configs['home_title']);
         $display->add('home_description', CGlobal::$configs['home_description']);
