@@ -58,17 +58,22 @@
                                 <figure class="figure card__bg-figure" style="background-image: url('https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')"></figure>
                             </div>
                             <div class="card__block-slide">
-                                <div class="card__list">
-                                    <div class="card__item">
-                                        <figure class="figure card__figure" style="background-image: url('https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')"></figure>
+                                <div class="card__list carousel" data-flickity>
+                                    <div class="card__item carousel-cell">
+                                        <img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                                        {*<figure class="figure card__figure" style="background-image: url('https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')"></figure>*}
+                                    </div>
+                                    <div class="card__item carousel-cell">
+                                        <img src="https://www.w3schools.com/w3css/img_lights.jpg" />
+                                        {*<figure class="figure card__figure" style="background-image: url('https://www.w3schools.com/w3css/img_lights.jpg')"></figure>*}
+                                    </div>
+                                    <div class="card__item carousel-cell">
+                                        <img src="https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
+                                        {*<figure class="figure card__figure" style="background-image: url('https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')"></figure>*}
                                     </div>
                                 </div>
                             </div>
                             <div class="card__block-footer">
-                                <div class="card__block-button">
-                                    <button class="card__button-slider"><i class="fa fa-angle-left" aria-hidden="true"></i></button>
-                                    <button class="card__button-slider"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
-                                </div>
                                 <div class="card__number">
                                     <span class="number">3</span>/<span class="number">9</span>
                                 </div>
@@ -79,7 +84,7 @@
             </div>
         </section>
         {/foreach}
-        
+
         <section class="form-home">
             <figure class="figure form-home__figure" style="background-image: url('../../www/assets/imgs/OurWorks/Demo hover BCSV.png')"></figure>
             <div class="form-contact form-contact--home">

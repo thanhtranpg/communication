@@ -66,3 +66,4 @@ $(window).scroll(function() {
     yourNavigation.removeClass(stickyDiv);
   }
 });
+

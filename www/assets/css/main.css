@@ -292,6 +292,9 @@ body.header__menu-active {
 .tv .screen.active {
   opacity: 1; }
 
+.flickity-page-dots {
+  display: none; }
+
 .hero__container {
   position: relative; }
 
@@ -394,10 +397,10 @@ body.header__menu-active {
       max-width: 600px; } }
   @media screen and (min-width: 1024px) {
     .hero-image__inner {
-      max-width: 975px; } }
+      max-width: 800px; } }
   @media screen and (min-width: 1440px) {
     .hero-image__inner {
-      max-width: 1107px; } }
+      max-width: 900px; } }
   .hero-image__inner .hero-image__sub-figure:before {
     padding-top: 56.36856%; }
 
@@ -719,7 +722,11 @@ body.header__menu-active {
 
 .card {
   padding: 80px 0;
-  background: #0d0d0d; }
+  background: #0d0d0d;
+  border-bottom: 1px solid rgba(234, 234, 234, 0.06); }
+  @media screen and (min-width: 1024px) {
+    .card {
+      border-bottom: 0; } }
   @media screen and (min-width: 1280px) {
     .card {
       padding: 100px 0; } }
@@ -730,6 +737,32 @@ body.header__menu-active {
     .card .card__row {
       display: flex;
       align-items: stretch; } }
+  .card .card__item {
+    width: 500px;
+    height: 300px; }
+    @media screen and (min-width: 768px) {
+      .card .card__item {
+        width: 768px;
+        height: 400px; } }
+    @media screen and (min-width: 1024px) {
+      .card .card__item {
+        width: 500px;
+        height: 350px; } }
+    @media screen and (min-width: 1280px) {
+      .card .card__item {
+        width: 700px;
+        height: 400px; } }
+    @media screen and (min-width: 1500px) {
+      .card .card__item {
+        width: 834px;
+        height: 440px; } }
+    @media screen and (min-width: 1635px) {
+      .card .card__item {
+        width: 834px;
+        height: 480px; } }
+    .card .card__item img {
+      width: 100%;
+      height: 100%; }
   .card .card__col.card__col--left {
     width: 100%;
     margin-bottom: 40px;
@@ -844,32 +877,34 @@ body.header__menu-active {
         display: none; } }
   .card .card__block-footer {
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; }
+    height: 37px;
+    line-height: 37px;
+    text-align: right; }
     @media screen and (min-width: 1024px) {
       .card .card__block-footer {
         width: 80%; } }
   .card .card__block-button {
     display: flex; }
-  .card .card__button-slider {
+  .card .flickity-button.flickity-prev-next-button {
     width: 32px;
     height: 32px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
     background: transparent;
     border: 1px solid #ff0000;
+    border-radius: 0%;
+    bottom: -80px;
     transition: all 0.5s ease-in-out; }
-    .card .card__button-slider i {
-      font-size: 20px;
-      color: #ff0000;
+    .card .flickity-button.flickity-prev-next-button.previous {
+      left: 0;
+      top: auto; }
+    .card .flickity-button.flickity-prev-next-button.next {
+      right: auto;
+      top: auto;
+      left: 50px; }
+    .card .flickity-button.flickity-prev-next-button .flickity-button-icon {
+      fill: #fff;
       transition: all 0.5s ease-in-out; }
-    .card .card__button-slider:hover {
+    .card .flickity-button.flickity-prev-next-button:hover {
       background: #ff0000; }
-      .card .card__button-slider:hover i {
-        color: #fff; }
   .card .card__number {
     color: #fff; }
   .card.card--left-img .card__row {
@@ -877,28 +912,29 @@ body.header__menu-active {
   .card.card--left-img .card__col-header {
     flex-direction: row-reverse; }
   .card.card--left-img .card__block-footer {
-    flex-direction: row-reverse; }
+    text-align: left; }
   .card.card--left-img .card__block-slide {
     justify-content: flex-start; }
   .card.card--left-img .card__slide {
     align-items: flex-start; }
+  .card.card--left-img .flickity-button.flickity-prev-next-button {
+    left: auto; }
+    .card.card--left-img .flickity-button.flickity-prev-next-button.previous {
+      right: 50px; }
+    .card.card--left-img .flickity-button.flickity-prev-next-button.next {
+      right: 0; }
   .card.card--left-img .card__col.card__col--left {
     width: 100%;
     margin-bottom: 40px;
-    color: #fff; }
+    color: #fff;
+    text-align: left; }
     @media screen and (min-width: 1024px) {
       .card.card--left-img .card__col.card__col--left {
         width: 40%;
-        margin-bottom: 0;
-        display: flex;
-        align-items: flex-end;
-        justify-content: center;
-        flex-direction: column; } }
+        margin-bottom: 0; } }
     @media screen and (min-width: 1024px) {
       .card.card--left-img .card__col.card__col--left .card__footer {
-        width: 100%;
-        display: flex;
-        justify-content: flex-end; } }
+        width: 100%; } }
     @media screen and (min-width: 1024px) {
       .card.card--left-img .card__col.card__col--left .card__footer .button-primary {
         width: 100%; } }
@@ -1348,7 +1384,7 @@ nav.nav {
   @media screen and (min-width: 1024px) {
     .footer__item {
       margin-left: 50px; } }
-  .footer__item:hover a {
+  .footer__item:hover a, .footer__item.item-active a {
     color: rgba(255, 255, 255, 0.7); }
   .footer__item a {
     color: #ffffff;
@@ -1759,14 +1795,26 @@ nav.nav {
 
 .header__item a {
   color: #fff;
-  transition: all 0.5s ease-in-out; }
+  text-decoration: none;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #ff0000, #ff0000 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: 100%; }
   @media screen and (min-width: 1024px) {
     .header__item a:hover {
-      color: red; } }
+      transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+      background-position: 0%; } }
   .header__item a.header__social {
-    margin-right: 20px; }
+    margin-right: 20px;
+    -webkit-background-clip: unset;
+    -webkit-text-fill-color: unset;
+    background: none; }
+    .header__item a.header__social:hover i {
+      color: #ff0000; }
     .header__item a.header__social i {
-      font-size: 28px; }
+      font-size: 28px;
+      transition: all 0.5s ease-in-out; }
 
 .header__item--p {
   margin: 20px 0; }

@@ -7,7 +7,7 @@
             <ul class="footer__list">
             	{foreach from=$menuArr name=menu item=menu}
                 	<li class="header__item">
-                    	<li class="footer__item">
+                    	<li class="footer__item item-active">
 		                    <a class="link-menu {$menu.class}" href ="{$menu.href}" >{$menu.title}</a>
 		                </li>
                 	</li>

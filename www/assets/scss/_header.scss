@@ -82,16 +82,31 @@
 .header__item {
   a {
     color: #fff;
-    transition: all 0.5s ease-in-out;
+    text-decoration: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right,#ff0000, #ff0000 50%, #fff 50%);
+    background-size: 200% 100%;
+    background-position: 100%;
     @media screen and (min-width: 1024px) {
       &:hover {
-        color: red;
+        transition: all 0.3s cubic-bezier(0.000, 0.000, 0.230, 1);
+        background-position: 0%;
       }
     }
     &.header__social {
       margin-right: 20px;
+      -webkit-background-clip: unset;
+      -webkit-text-fill-color: unset;
+      background: none;
+      &:hover {
+        i {
+          color: #ff0000;
+        }
+      }
       i {
         font-size: 28px;
+        transition: all 0.5s ease-in-out;
       }
     }
   }

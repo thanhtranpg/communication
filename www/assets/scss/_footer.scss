@@ -46,7 +46,7 @@ nav.nav {
   @media screen and (min-width: 1024px) {
     margin-left: 50px;
   }
-  &:hover {
+  &:hover, &.item-active {
     a {
       color: rgba(#fff, 0.7);
     }

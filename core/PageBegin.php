@@ -21,7 +21,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <?php
  if(CGlobal::$website_title=='') CGlobal::$website_title=CGlobal::$configs['web_name'];
- 
+
 
  $pageURL = 'http';
  $pageURL .= "://";
@@ -50,12 +50,12 @@
 <meta name="twitter:title" content="<?php echo CGlobal::$website_title; ?>" />
 <meta name="twitter:description" content="<?php echo CGlobal::$configs['web_des']; ?>" />
 <meta name="twitter:image:src" content="<?php echo WEB_ROOT; ?>uploads/<?php echo CGlobal::$website_image; ?>" />
-<meta name="twitter:domain" content="<?php echo WEB_ROOT; ?>">  
+<meta name="twitter:domain" content="<?php echo WEB_ROOT; ?>">
 <meta name="DC.Format" content="text/html">
 <meta name="DC.Language" content="vi" >
 <meta name="DC.Publisher" content="communicationn" >
 <meta name= "DC.Creator" content = "communication">
-<meta name="DC.Title" content="<?php echo CGlobal::$website_title; ?>" > 
+<meta name="DC.Title" content="<?php echo CGlobal::$website_title; ?>" >
 <?php  if( isset($_GET['main']) && in_array($_GET['main'], CGlobal::$pg_noIndex)){?>
 <meta name="ROBOTS" content="NOINDEX, NOFOLLOW, NOARCHIVE, NOSNIPPET" />
 <?php  }else{?>
@@ -79,6 +79,7 @@
     <link rel="stylesheet" href="<?php echo STATIC_URL;?>www/assets/css/main.css?v=<?php echo CGlobal::$version; ?>" >
     <link rel="stylesheet" href="<?php echo STATIC_URL;?>www/assets/dist/aos.css?v=<?php echo CGlobal::$version; ?>">
     <link rel="stylesheet" href="<?php echo STATIC_URL;?>www/assets/css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css?v=<?php echo CGlobal::$version; ?>">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
 
@@ -96,3 +97,5 @@ TIME_NOW = <?php echo TIME_NOW; ?>;
 <?php echo System::$extraHeaderJS;?>
 </head>
 <body ng-app="" ng-class="{'header__menu-active' : toggle }">
+
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.js"></script>
