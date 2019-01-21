@@ -3,8 +3,8 @@
         <div class="hero__container">
             <figure class="figure hero__figure" style="background-image: url('uploads/{$banner.image}')"></figure>
             <div class="hero__inner">
-                <h1 class="heading hero__heading heading--underline">{$banner.title}</h1>
-                <div class="p hero__description">{$banner.description}
+                <h1 class="heading hero__heading heading--underline" data-aos="fade-up">{$banner.title}</h1>
+                <div class="p hero__description" data-aos="fade-up">{$banner.description}
                 </div>
             </div>
         </div>

@@ -3,8 +3,8 @@
         <div class="hero__container">
             <figure class="figure hero__figure" style="background-image: url('/uploads/{$banner.image}')"></figure>
             <div class="hero__inner">
-                <h1 class="heading hero__heading heading--underline">{$banner.title}</h1>
-                <div class="p hero__description">{$banner.description}
+                <h1 class="heading hero__heading heading--underline" data-aos="fade-up">{$banner.title}</h1>
+                <div class="p hero__description" data-aos="fade-up">{$banner.description}
                 </div>
             </div>
         </div>
@@ -44,7 +44,11 @@
                         <textarea class="form-textarea form-contact__textarea" rows="8" name="txtDetail" id="txtDetail" required >Project Detail</textarea>
                     </form>
                     <div class="form-contact__footer" data-aos="fade-up">
-                        <button class="button-secondary" id="send_email_contact" >SEND</button>
+                        <button id="send_email_contact" class="button-secondary button-transform">
+                            <span class="hover">SEND</span>
+                            <span class="transform">SEND</span>
+                            <span class="bg-hover"></span>
+                        </button>
                     </div>
                 </div>
                 <div class="form-contact__col form-contact__col--right">

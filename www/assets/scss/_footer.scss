@@ -46,16 +46,42 @@ nav.nav {
   @media screen and (min-width: 1024px) {
     margin-left: 50px;
   }
-  &:hover, &.item-active {
+  &:hover {
     a {
-      color: rgba(#fff, 0.7);
+      span {
+        &.menu-hover {
+          transform: translate3d(0, -100%, 0);
+        }
+        &.menu-transform {
+        transform: translate3d(0, -100%, 0);
+      }
+      }
     }
   }
   a {
     color: #ffffff;
     text-decoration: none;
     white-space: nowrap;
-    transition: all 0.5s ease-in-out;
+  }
+  .link-menu {
+    display: inline-block;
+    height: 32px;
+    overflow: hidden;
+    position: relative;
+    span {
+      display: block;
+      &.menu-hover {
+        width: 100%;
+        height: 100%;
+        color: #ff0000;
+        transform: translate3d(0, 100%, 0);
+        transition: all 0.3s ease-in-out;
+      }
+      &.menu-transform {
+        transform: translate3d(0, 0, 0);
+        transition: all 0.3s ease-in-out;
+      }
+    }
   }
 }
 
@@ -134,11 +160,17 @@ nav.nav {
     i {
       font-size: 30px;
       color: #ffffff;
+      transition: all 0.3s ease-in-out;
       @media screen and (min-width: 1024px) {
         font-size: 40px;
       }
       @media screen and (min-width: 1440px) {
         font-size: 50px;
+      }
+    }
+    &:hover {
+      i {
+        color: #0d0d0d;
       }
     }
   }

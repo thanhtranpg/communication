@@ -17,7 +17,11 @@
                         <div class="p hero__description">{$home_description}
                         </div>
                         <div class="hero__cta">
-                            <a class="button-primary p" href="about-us.html" target="_blank">About Us</a>
+                            <a  href="about-us.html" target="_blank" class="button-primary p button-transform">
+                                <span class="hover">About Us</span>
+                                <span class="transform">About Us</span>
+                                <span class="bg-hover"></span>
+                            </a>
                         </div>
                     </div>
                     <div class="hero__video-button">
@@ -33,7 +37,11 @@
                     <h1 class="sub-heading hero__heading heading--underline">{$banner.title}</h1>
                     <div class="p hero__description">{$banner.description}
                     </div>
-                    <a href="" class="button-primary p">Services</a>
+                    <a  href="about-us.html" target="_blank" class="button-primary p button-transform">
+                        <span class="hover">Services</span>
+                        <span class="transform">Services</span>
+                        <span class="bg-hover"></span>
+                    </a>
                 </div>
             </div>
         </section>
@@ -45,7 +53,11 @@
                         <h5 class="sub-heading card__heading heading--underline">{$ourwork.title}</h5>
                         <div class="card__description p">{$ourwork.description}</div>
                         <div class="card__footer">
-                            <a class="button-primary" href="{$ourwork.href}">OUR WORKS</a>
+                        <a   href="{$ourwork.href}" target="_blank" class="button-primary button-transform">
+                            <span class="hover">OUR WORKS</span>
+                            <span class="transform">OUR WORKS</span>
+                            <span class="bg-hover"></span>
+                        </a>
                         </div>
                     </div>
                     <div class="card__col card__col--right" data-aos="fade-up">
@@ -99,8 +111,12 @@
                                 <input class="form-input form-contact__input" placeholder="Company/Organization" name="txtCompany" id="txtCompany" required />
                                 <textarea class="form-textarea form-contact__textarea" rows="8" name="txtDetail" id="txtDetail" required >Project Detail</textarea>
                             </form>
-                            <div class="form-contact__footer"">
-                                <button class="button-secondary" id="send_email_contact" >SEND</button>
+                            <div class="form-contact__footer">
+                                <button id="send_email_contact" class="button-secondary button-transform">
+                                    <span class="hover">SEND</span>
+                                    <span class="transform">SEND</span>
+                                    <span class="bg-hover"></span>
+                                </button>
                             </div>
                         </div>
                     </div>

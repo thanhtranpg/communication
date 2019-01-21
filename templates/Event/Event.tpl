@@ -16,7 +16,11 @@
                 {$banner.description}
             </div>
             <div class="block-event__footer"  data-aos="fade-up">
-                <button class="button-secondary" onclick="window.location.href = '{$banner.link}';">SEE MORE</button>
+                <button class="button-secondary button-transform" onclick="window.location.href = '{$banner.link}';">
+                    <span class="hover">SEE MORE</span>
+                    <span class="transform">SEE MORE</span>
+                    <span class="bg-hover"></span>
+                </button>
             </div>
         </div>
     </section>
