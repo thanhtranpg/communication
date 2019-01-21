@@ -184,22 +184,38 @@
       width: 120px;
       height: 120px;
       background: transparent;
-      border: 3px solid #ff0000;
-      border-radius: 50%;
+      border: 0px;
       transition: all 0.5s ease-in-out;
       display: none;
+      position: relative;
       @media screen and (min-width: 1024px) {
         display: flex;
         align-items: center;
         justify-content: center;
       }
+      &:before {
+          content: '';
+          width: 120px;
+          height: 120px;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate3d(-50%, -50%, 0);
+          border: 3px solid #ff0000;
+          border-radius: 50%;
+          transition: all 0.3s ease-in-out;
+        }
       &:focus {
         outline: none;
       }
       &:hover {
-        width: 140px;
-        height: 140px;
-        border-color: #fff;
+        border-color: transparent;
+        &:before {
+          content: '';
+          width: 140px;
+          height: 140px;
+          border-color: #fff;
+        }
         i {
           color: #fff;
         }

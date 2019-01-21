@@ -8,7 +8,9 @@
         {/if}
         <div class="header__nav">
             <button class="button-header" ng-click="toggle = !toggle">
-                <i class="fa fa-header-custom" aria-hidden="true"></i>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </button>
         </div>
         <div class="header__menu">

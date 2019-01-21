@@ -381,9 +381,16 @@ body.header__menu-active {
   }
 
   button.button-header {
-    i.fa-header-custom {
-      &:before {
-        content: "\f00d"!important;
+    span {
+      margin-bottom: 0;
+      &:first-child {
+        transform: translateY(-4.5px) rotate(45deg);
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+      &:last-child {
+        transform: translateY(-7.5px) rotate(-45deg);
       }
     }
   }

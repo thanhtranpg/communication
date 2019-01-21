@@ -41,7 +41,18 @@
     border: 0;
     outline: none;
   }
-  i.fa-header-custom {
+  .bar {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+    margin-bottom: 5px;
+    transition: all 0.5s ease-in-out;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  /*i.fa-header-custom {
     color: #fff;
     font-size: 24px;
     transition: all 0.5s ease-in-out;
@@ -51,7 +62,7 @@
     &:before {
       content: "\f0c9";
     }
-  }
+  }*/
 }
 
 .header__menu {

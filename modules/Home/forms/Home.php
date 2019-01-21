@@ -42,12 +42,19 @@ class HomeForm extends Form{
             }
            
           }
+        //   echo "<pre>";
+        //   print_r($product_cat);die;
+
+          $images = array();
+          $images = ["https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "https://www.w3schools.com/w3css/img_lights.jpg", "https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"];
+
         $display->add('ourwork_cat', $product_cat);
         $display->add('youtube_id_background', CGlobal::$configs['youtube_id']);
         $display->add('endSecond', CGlobal::$configs['endSecond']);
         $display->add('youtube_id_play', CGlobal::$configs['youtube_id_play']);
         $display->add('home_title', CGlobal::$configs['home_title']);
         $display->add('home_description', CGlobal::$configs['home_description']);
+        $display->add('images', $images);
         
 		$display->output("Home");
 	}

@@ -6,9 +6,6 @@
                 <div class="hero__video">
                     <div class="tv">
                         <div class="screen mute" id="tv" _youtubeID="Zr1jAVkYOV4" _endSeconds="30" ></div>
-                        {*<iframe class="hero__clip" src="https://www.youtube.com/embed/DWgmCN4ms74?autoplay=1&mute=1&loop=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowFullScreen="allowFullScreen">*}
-
-                        {*</iframe>*}
                     </div>
                 </div>
                 <div class="hero__inner">
@@ -45,7 +42,7 @@
                 </div>
             </div>
         </section>
-        {foreach from=$ourwork_cat name=ourwork item=ourwork}
+        {foreach from=$ourwork_cat name=ourwork key=i item=ourwork}
         <section class="card {if $smarty.foreach.ourwork.iteration % 2 == 0} card--left-img {/if}" >
             <div class="card__container">
                 <div class="card__row">
@@ -66,28 +63,31 @@
                             <span class="red-bar"></span>
                         </div>
                         <div class="card__slide">
-                            <div class="card__hide-bg">
+                            <!--<div class="card__hide-bg">
                                 <figure class="figure card__bg-figure" style="background-image: url('https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')"></figure>
-                            </div>
+                            </div>-->
                             <div class="card__block-slide">
-                                <div class="card__list carousel" data-flickity>
-                                    <div class="card__item carousel-cell">
-                                        <img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-                                        {*<figure class="figure card__figure" style="background-image: url('https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')"></figure>*}
-                                    </div>
-                                    <div class="card__item carousel-cell">
+                                <div class="card__list carousel" id="list_images_{$i}"  data-flickity>
+                                    {foreach from=$images item=image}
+                                        <div class="card__item carousel-cell">
+                                            <img src="{$image}" />
+                                            {*<figure class="figure card__figure" style="background-image: url('https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')"></figure>*}
+                                        </div>
+                                    {/foreach}
+                                    
+                                    <!--<div class="card__item carousel-cell">
                                         <img src="https://www.w3schools.com/w3css/img_lights.jpg" />
                                         {*<figure class="figure card__figure" style="background-image: url('https://www.w3schools.com/w3css/img_lights.jpg')"></figure>*}
                                     </div>
                                     <div class="card__item carousel-cell">
                                         <img src="https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
                                         {*<figure class="figure card__figure" style="background-image: url('https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')"></figure>*}
-                                    </div>
+                                    </div>-->
                                 </div>
                             </div>
                             <div class="card__block-footer">
                                 <div class="card__number">
-                                    <span class="number">3</span>/<span class="number">9</span>
+                                    <span class="number" id="index_image_{$i}"></span>/<span class="number" id="total_image_{$i}">9</span>
                                 </div>
                             </div>
                         </div>

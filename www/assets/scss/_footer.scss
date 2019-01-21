@@ -65,9 +65,12 @@ nav.nav {
   }
   .link-menu {
     display: inline-block;
-    height: 32px;
+    height: 25px;
     overflow: hidden;
     position: relative;
+    @media screen and (min-width: 1024px) {
+      height: 32px;
+    }
     span {
       display: block;
       &.menu-hover {

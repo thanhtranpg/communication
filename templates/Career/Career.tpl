@@ -27,7 +27,11 @@
                         <div class="card-job__inner">
                             <h5 class="card-job__sub-title sub-title">{$career.title}</h5>
                             <div class="p card-job__location">{$career.address}</div>
-                            <button class="card-job__button button-primary" onclick="window.open('/uploads/{$career.image}', '_blank');">JOB DESCRIPTION</button>
+                            <button onclick="window.open('/uploads/{$career.image}', '_blank');" class="card-job__button button-primary button-transform">
+                            <span class="hover">JOB DESCRIPTION</span>
+                            <span class="transform">JOB DESCRIPTION</span>
+                            <span class="bg-hover"></span>
+                        </button>
                         </div>
                     </div>
                 {/foreach}
