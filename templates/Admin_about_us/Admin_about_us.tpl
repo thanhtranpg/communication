@@ -16,23 +16,12 @@
     	<div>{$msg}</div>
     	<div class="clear paddingBottom5"></div>		
         <div style="text-align:center">
-			<textarea name="des">{$des}</textarea>
+			<textarea name="des" style="width: 100%; height: 200px">{$des}</textarea>
         </div>   
         
         <div class="float_left marginRight10" style="width:35%;">&nbsp;</div>
         <div class="float_left"><input type="submit" value="Cập nhật" class="button"></div>
         <div class="clear"></div>  
 </div>
-<script type="text/javascript">
-{literal}
 
-   
-	 var des = CKEDITOR.replace( 'des',
-	{ uiColor : '#9AB8F3',
-		height:'500px'
-	 });
-	CKFinder.setupCKEditor( des, 'ckfinder/' ) ;
-	
-
-{/literal}
 </script>

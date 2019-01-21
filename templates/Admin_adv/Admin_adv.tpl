@@ -64,14 +64,6 @@ function check_post_submit(){
         {/if}
     </div>
         <div class="clear paddingBottom5"></div>
-                
-        
-                        
-        <div class="float_left marginRight10" style="width:20%; text-align:right">Mô tả</div>
-        <div class="float_left" style="width:50%;"">
-                 <textarea id="description" name="description" rows="6" style="width:100%"  >{$item.description}</textarea>
-        </div>
-        <div class="clear paddingBottom5"></div>  
         
         <div class="float_left marginRight10" style="width:20%; text-align:right">Thứ tự</div>
         <div class="float_left"><input type="input" id="ord" name="ord" class="input_text" style="width:70px" value="{$item.ord}" maxlength="60"></div>

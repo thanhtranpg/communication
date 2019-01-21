@@ -1,4 +1,6 @@
 <script src="<?php echo STATIC_URL;?>www/assets/dist/aos.js?v=<?php echo CGlobal::$version; ?>"></script>
+<script src="<?php echo STATIC_URL;?>www/assets/dist/jquery.zoomslider.min.js?v=<?php echo CGlobal::$version; ?>"></script>
+
 <script src="<?php echo STATIC_URL;?>www/assets/js/javascript.js?v=<?php echo CGlobal::$version; ?>"></script>
 <script type="text/javascript">
 

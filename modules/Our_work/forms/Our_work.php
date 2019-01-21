@@ -1,20 +1,26 @@
 <?php
 class Our_workForm extends Form{
-	private  $banner = 1;
+	private  $banner;
 	function Our_workForm(){
 		Form::Form('Our_workForm');	
-		$sql = "SELECT * FROM ".PREFIX_TABLE."adv WHERE status = 1 and catid=7  ORDER BY ord Desc limit 1";
+		$row = DB::select(PREFIX_TABLE . 'about_us', 'id = 8');
+        $description = System::post_db_parse_html($row['des']);
+        $this->banner['title'] = "Our Works";
+        $this->banner['description'] = $description;
+        $this->banner['image'] = array();
+        $sql = "SELECT * FROM ".PREFIX_TABLE."adv WHERE status = 1 and catid=7  ORDER BY ord Desc ";
         $arr = DB::query($sql);   
         if (!empty($arr))
         {
           while ($row = mysql_fetch_assoc($arr)){
-          	CGlobal::$website_title = $row['title'];
-            CGlobal::$configs['web_keyword'] = $row['title'];
-            CGlobal::$configs['web_des'] = $row['description'];
-           	$this->banner = $row;
+            
+            $this->banner['image'][] = $row['image'];
           }
           
         }
+        CGlobal::$website_title = $this->banner['title'];
+        CGlobal::$configs['web_keyword'] = $this->banner['title'];
+        CGlobal::$configs['web_des'] = $this->banner['description'];
 
 	}	
 	

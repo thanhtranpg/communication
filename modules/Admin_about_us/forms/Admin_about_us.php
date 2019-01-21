@@ -6,7 +6,6 @@ class Admin_about_usForm extends Form{
 			Url::redirect();
 		}		
 	}	
-	
 	function on_submit(){
 		global $display;
 		$des = System::getParam('des');
@@ -20,7 +19,12 @@ class Admin_about_usForm extends Form{
 		$arr_about_us = array(
 			1=>'Address',
 			2=>"Coypyright",
-			3=>"Bảo trì website"
+			3=>"Bảo trì website",
+			4=>"About us",
+			5=>"Service",
+			6=>"Carrer",
+			7=>"Contact us",
+			8=>"Our Work"
 		);
 		$id = System::getParamInt('id');
 		$id = (empty($id)) ? 1 : $id;

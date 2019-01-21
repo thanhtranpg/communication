@@ -78,9 +78,12 @@
       <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="<?php echo STATIC_URL;?>www/assets/css/main.css?v=<?php echo CGlobal::$version; ?>" >
     <link rel="stylesheet" href="<?php echo STATIC_URL;?>www/assets/dist/aos.css?v=<?php echo CGlobal::$version; ?>">
+    <link rel="stylesheet" href="<?php echo STATIC_URL;?>www/assets/dist/zoomslider.css?v=<?php echo CGlobal::$version; ?>">
+    <script src="<?php echo STATIC_URL;?>www/assets/dist/modernizr-2.6.2.min.js?v=<?php echo CGlobal::$version; ?>"></script>
     <link rel="stylesheet" href="<?php echo STATIC_URL;?>www/assets/css/font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.css?v=<?php echo CGlobal::$version; ?>">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
 
 <?php  }?>

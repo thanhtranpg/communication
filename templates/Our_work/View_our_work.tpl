@@ -1,10 +1,18 @@
 <div class="page-sub-work">
     <section class="hero">
         <div class="hero__container">
-            <figure class="figure hero__figure" style="background-image: url('{insert name=getItemImage img=$ourwork_corver.image id=$ourwork_corver.id folder='ourwork' type='1680'}')"></figure>
+            <figure id="demo-1" class="figure hero__figure" data-zs-src='[
+            {foreach from=$ourworks name=slide key=key item=slide}
+                {if $smarty.foreach.slide.last}
+                    "{insert name=getItemImage img=$slide.image id=$slide.id folder='ourwork' type='1680'}" 
+                {else}
+                     "{insert name=getItemImage img=$slide.image id=$slide.id folder='ourwork' type='1680'}", 
+                {/if}
+            {/foreach}
+            ]' data-zs-overlay="false" data-zs-bullets="false"  data-zs-interval= "20000" data-zs-speed= "8000" data-zs-switchSpeed= "800" ></figure>
             <div class="hero__inner">
-                <h1 class="heading hero__heading heading--underline">{$banner.title}</h1>
-                <div class="p hero__description">{$banner.description}
+                <h1 class="heading hero__heading heading--underline" data-aos="fade-up" data-aos-delay="300" data-item="1">{$banner.title}</h1>
+                <div class="p hero__description" data-aos="fade-up" data-aos-delay="800">{$banner.description}
                 </div>
             </div>
         </div>

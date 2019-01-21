@@ -43,10 +43,6 @@ class View_our_workForm extends Form{
             if (!empty($arr))
             {
               foreach ($arr as $item){
-                if( sizeof($ourwork_corver) <=0 ) {
-                  $ourwork_corver['id'] = $item['id'];
-                  $ourwork_corver['image'] = $item['image'];
-                }
                 $ourworks[] = $item;
               }
             }
