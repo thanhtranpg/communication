@@ -28,7 +28,7 @@
             <div class="card-sub__list">
             	{foreach from=$ourworks name=ourwork item=ourwork}
 				    <div class="card-sub__item" data-aos="fade-up" onclick="load_our_work_media({$ourwork.id},'img');" >
-                    <figure class="figure card-sub__figure" style="background-image: url('{insert name=getItemImage img=$ourwork.image id=$ourwork.id folder='ourwork' type='610'}')"></figure>
+                    <figure class="figure card-sub__figure" style="background-image: url('/uploads/')"></figure>
                     <div class="card-sub__inner">
                         <h5 class="card-sub__sub-title sub-link">{$ourwork.title}</h5>
                         

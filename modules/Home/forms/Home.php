@@ -31,22 +31,19 @@ class HomeForm extends Form{
                 $row['href'] = Url::build('our_work', array('catid' => $row['catid'], 'xtname' =>
                                 System::safe_title($row['title'])));
                 $row['title'] = System::post_db_parse_html($row['title']);
-                $sql_ourwork = "SELECT title, image FROM " . PREFIX_TABLE . "ourwork Where status =1 and catid = ".$row['catid']." ORDER BY ord desc ";
+                $sql_ourwork = "SELECT id,title, image FROM " . PREFIX_TABLE . "ourwork Where status =1 and catid = ".$row['catid']." ORDER BY ord desc ";
         		$result_ourwork = DB::query($sql_ourwork);
         		if ($result_ourwork) {
         			while ($row_ourwork = mysql_fetch_assoc($result_ourwork)){
-        				$row['ourworks'][] = array( $row_ourwork['title'],$row_ourwork['image'] );
+        				$row['ourworks'][] = array('id'=>$row_ourwork['id'],'title' => $row_ourwork['title'],'image' =>$row_ourwork['image'] );
         			}
         		}
             	$product_cat[]=$row;
             }
            
           }
-        //   echo "<pre>";
-        //   print_r($product_cat);die;
-
-          $images = array();
-          $images = ["https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500", "https://www.w3schools.com/w3css/img_lights.jpg", "https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"];
+           //echo "<pre>";
+           //print_r($product_cat);die;
 
         $display->add('ourwork_cat', $product_cat);
         $display->add('youtube_id_background', CGlobal::$configs['youtube_id']);
@@ -54,8 +51,7 @@ class HomeForm extends Form{
         $display->add('youtube_id_play', CGlobal::$configs['youtube_id_play']);
         $display->add('home_title', CGlobal::$configs['home_title']);
         $display->add('home_description', CGlobal::$configs['home_description']);
-        $display->add('images', $images);
-        
+
 		$display->output("Home");
 	}
 	

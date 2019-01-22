@@ -1,20 +1,38 @@
+<script src="/www/assets/dist/video.popup.js?v=<?php echo CGlobal::$version; ?>"></script>
+{literal}
+<script>
+            $(function(){
+                $("#video").videoPopup({
+                    autoplay: 1,
+                    controlsColor: 'white',
+                    showVideoInformations: 0,
+                    width: 1000,
+                    customOptions: {
+                        rel: 0,
+                        end: 60
+                    }
+                });
+                $("#video2").videoPopup();
+            });
+        </script>
+{/literal}
 
 <div class="page-home">
         <section class="hero hero--video">
             <div class="hero__container">
                 <figure class="figure hero__figure" style="background-image: url('/www/assets/imgs/Festival/MaskGroup47.png')"></figure>
-                <div class="hero__video">
+                <div class="hero__video"> 
                     <div class="tv">
-                        <div class="screen mute" id="tv" _youtubeID="Zr1jAVkYOV4" _endSeconds="30" ></div>
+                        <div class="screen mute" id="tv" _youtubeID="{$youtube_id_background}" _endSeconds="{$endSecond}" ></div>
                     </div>
                 </div>
-                <div class="hero__inner">
-                    <div class="hero__content">
-                        <h1 class="heading hero__heading heading--underline">{$home_title}</h1>
-                        <div class="p hero__description">{$home_description}
+                <div class="hero__inner" >
+                    <div class="hero__content" data-aos="fade-up">
+                        <h1 class="heading hero__heading heading--underline" >{$home_title}</h1>
+                        <div class="p hero__description" >{$home_description}
                         </div>
-                        <div class="hero__cta">
-                            <a  href="about-us.html" target="_blank" class="button-primary p button-transform">
+                        <div class="hero__cta" >
+                            <a  href="{$about_link}" target="_blank" class="button-primary p button-transform">
                                 <span class="hover">About Us</span>
                                 <span class="transform">About Us</span>
                                 <span class="bg-hover"></span>
@@ -22,7 +40,7 @@
                         </div>
                     </div>
                     <div class="hero__video-button">
-                        <button class="hero-video__buton"><i class="fa fa-play" aria-hidden="true"></i></button>
+                        <button class="hero-video__buton" id="video" video-url="https://www.youtube.com/watch?v={$youtube_id_play}"><i class="fa fa-play" aria-hidden="true"></i></button>
                     </div>
                 </div>
             </div>
@@ -31,10 +49,10 @@
             <div class="hero__container">
                 <figure class="figure hero__figure" style="background-image: url('/uploads/{$banner.image}')"></figure>
                 <div class="hero__inner">
-                    <h1 class="sub-heading hero__heading heading--underline">{$banner.title}</h1>
-                    <div class="p hero__description">{$banner.description}
+                    <h1 class="sub-heading hero__heading heading--underline" data-aos="fade-up" data-aos-delay="300" data-item="1">{$banner.title}</h1>
+                    <div class="p hero__description" data-aos="fade-up" data-item="2" data-aos-delay="800">{$banner.description}
                     </div>
-                    <a  href="about-us.html" target="_blank" class="button-primary p button-transform">
+                    <a  href="{$service_link}" target="_blank" class="button-primary p button-transform" data-aos="fade-up" data-item="2" data-aos-delay="800">
                         <span class="hover">Services</span>
                         <span class="transform">Services</span>
                         <span class="bg-hover"></span>
@@ -63,26 +81,15 @@
                             <span class="red-bar"></span>
                         </div>
                         <div class="card__slide">
-                            <!--<div class="card__hide-bg">
-                                <figure class="figure card__bg-figure" style="background-image: url('https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')"></figure>
-                            </div>-->
                             <div class="card__block-slide">
                                 <div class="card__list carousel" id="list_images_{$i}"  data-flickity>
-                                    {foreach from=$images item=image}
+                                    {foreach from=$ourwork.ourworks item=image}
                                         <div class="card__item carousel-cell">
-                                            <img src="{$image}" />
-                                            {*<figure class="figure card__figure" style="background-image: url('https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')"></figure>*}
+                                            <img src="{insert name=getItemImage img=$image.image id=$image.id folder='ourwork' type='610'}" />
+                                            
                                         </div>
                                     {/foreach}
                                     
-                                    <!--<div class="card__item carousel-cell">
-                                        <img src="https://www.w3schools.com/w3css/img_lights.jpg" />
-                                        {*<figure class="figure card__figure" style="background-image: url('https://www.w3schools.com/w3css/img_lights.jpg')"></figure>*}
-                                    </div>
-                                    <div class="card__item carousel-cell">
-                                        <img src="https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" />
-                                        {*<figure class="figure card__figure" style="background-image: url('https://images.pexels.com/photos/257360/pexels-photo-257360.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500')"></figure>*}
-                                    </div>-->
                                 </div>
                             </div>
                             <div class="card__block-footer">
@@ -124,3 +131,6 @@
             </div>
         </section>
     </div>
+
+
+
