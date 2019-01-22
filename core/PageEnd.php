@@ -1,9 +1,94 @@
+<style type="text/css">
+  .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 250px;
+}
+
+.modal-content h1 {
+  text-align: center;
+  color: #06D85F;
+  margin: 5px 0;
+  text-transform: uppercase;
+  font-size: 18px!important;
+}
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h1>Notification</h1>
+    <hr/>
+    <p>Contact sent was successful </p>
+  </div>
+
+</div>
 <script src="<?php echo STATIC_URL;?>www/assets/dist/aos.js?v=<?php echo CGlobal::$version; ?>"></script>
 
 <script src="<?php echo STATIC_URL;?>www/assets/dist/jquery.zoomslider.min.js?v=<?php echo CGlobal::$version; ?>"></script>
 
 <script src="<?php echo STATIC_URL;?>www/assets/js/javascript.js?v=<?php echo CGlobal::$version; ?>"></script>
 <script type="text/javascript">
+  // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
 
   $('#send_email_contact').click(function(){
     var txtName = $('#txtName').val(); 
@@ -133,8 +218,9 @@
           $('#txtDetail').val('');
     	   	$(bt).show();
       		$('.lds-roller').hide();
-
-      	   }									
+           $('#myModal').show();
+      	   }
+          								
   	   });		
 	}
 
