@@ -81,7 +81,7 @@
 
             return '<div class="videopopupjs videopopupjs--animation">'+
                         '<div class="videopopupjs__content">'+
-                            '<span class="videopopupjs__close"></span>'+
+                            '<span class="videopopupjs__close"><span class="video__bars"></span><span class="video__bars"></span></span>'+
                             iframeElement+
                         '</div>'+
                     '</div>';

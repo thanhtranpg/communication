@@ -66,4 +66,42 @@ $(window).scroll(function() {
     yourNavigation.removeClass(stickyDiv);
   }
 });
+;
+
+
+// var lng = $("#list_images_8 img").length;
+// $("#total_image_8").html(lng);
+// $("#index_image_8").html("1");
+
+$(document).ready(function() {
+    // $(".flickity-button").click(function(){
+    //   var index = $("#list_images_8").find('.is-selected').index();
+    //   console.log(index);
+    //   $("#index_image_8").html(index + 1);
+    // });
+    $(".flickity-button").click(function() {
+    var card_side = $(this).parents().eq(2);
+     var index = card_side.find('.is-selected').index();
+      card_side.find('.current').text(index + 1);
+});
+
+$('.card__slide').each(function(e){
+    var total = $(this).find('.card__item').length;
+    $(this).find('.total').text(total);
+    var current = $(this).find('.current').text(1);
+});
+});
+
+
+var galleryElems = document.querySelectorAll('.carousel');
+for ( var i=0, len = galleryElems.length; i < len; i++ ) {
+  var galleryElem = galleryElems[i];
+  var galleryItem = document.querySelectorAll('.card__item');
+  console.log(galleryItem.length)
+  new Flickity( galleryElem, {
+    wrapAround: true,
+    contain: true,
+  });
+}
+
 

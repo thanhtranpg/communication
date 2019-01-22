@@ -424,3 +424,47 @@ body.header__menu-active {
 .flickity-page-dots {
   display: none;
 }
+
+.pagination {
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+  li {
+    margin: 0 5px;
+    display: inline-block;
+    position: relative;
+    a {
+      color: #0d0d0d;
+    }
+  }
+}
+
+.videopopupjs {
+  background-color: #111517!important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .videopopupjs__content {
+    margin-top: 10px;
+  }
+  .videopopupjs__close {
+    width: 100%!important;
+    text-align: right;
+    &:after {
+      content: none!important;
+    }
+    .video__bars {
+      width: 30px;
+      height: 3px;
+      display: inline-block;
+      background: #fff;
+      &:first-child {
+        transform: translateX(30.5px) rotate(-45deg);
+      }
+      &:last-child {
+        transform: translateX(0.55px) rotate(45deg);
+      }
+    }
+  }
+}
+

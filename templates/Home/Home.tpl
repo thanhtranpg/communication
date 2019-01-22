@@ -94,7 +94,7 @@
                             </div>
                             <div class="card__block-footer">
                                 <div class="card__number">
-                                    <span class="number" id="index_image_{$i}"></span>/<span class="number" id="total_image_{$i}">9</span>
+                                    <span class="number current" id="index_image_{$i}"></span>/<span class="number total" id="total_image_{$i}">9</span>
                                 </div>
                             </div>
                         </div>

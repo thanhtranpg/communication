@@ -45,3 +45,9 @@
 
 
 <div style="background: #807f7f" class="load_media"></div>
+<div class="modal-media">
+    <div class="modal-media__container">
+        <div class="modal-media__header"></div>
+        <div class="modal-media__body"></div>
+    </div>
+</div>
