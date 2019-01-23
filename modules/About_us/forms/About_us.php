@@ -26,7 +26,7 @@ class About_usForm extends Form{
 	function draw(){
 		global $display;
 		$our_clients = array();
-		$sql = "SELECT * FROM ".PREFIX_TABLE."adv WHERE status = 1 and catid=10  ORDER BY ord Desc";
+		$sql = "SELECT * FROM ".PREFIX_TABLE."adv WHERE status = 1 and catid=10  ORDER BY ord ASC";
         $arr = DB::query($sql);   
         if (!empty($arr))
         {
