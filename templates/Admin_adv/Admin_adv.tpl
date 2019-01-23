@@ -136,7 +136,7 @@ function check_post_submit(){
             <td class="rowtop">Tiêu đề</td>
             <td class="rowtop">Ảnh</td>
             <td class="rowtop" >Vị trí</td>
-
+            <td class="rowtop" >Thứ tự</td>
             <td class="rowtop" width="40">Trạng thái</td>
             <td class="rowtop" width="40">Sửa</td>
             <td class="rowtop" width="40">Xóa</td>

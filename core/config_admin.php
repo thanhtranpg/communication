@@ -10,7 +10,7 @@ $SetAdmMod = array(
     array("modkey"=>"admin_ourwork","modname"=>"Our Works","modlink"=>"&cmd=list","modaccess"=>"1"),
     //array("modkey"=>"admin_service","modname"=>"Services","modlink"=>"&cmd=list","modaccess"=>"1"),
     array("modkey"=>"admin_ourclient","modname"=>"Our Clients","modlink"=>"&cmd=list","modaccess"=>"1"),
-    array("modkey"=>"admin_carrer","modname"=>"Carrers","modlink"=>"&cmd=list","modaccess"=>"1"),
+    array("modkey"=>"admin_carrer","modname"=>"Careers","modlink"=>"&cmd=list","modaccess"=>"1"),
     array("modkey"=>"admin_event","modname"=>"Event","modlink"=>"&cmd=edit","modaccess"=>"1"),
     
     array("modkey"=>"admin_email","modname"=>"Email","modlink"=>"&cmd=list","modaccess"=>"1"),
