@@ -8,8 +8,10 @@ tag.src = 'https://www.youtube.com/player_api';
 var firstScriptTag = document.getElementsByTagName('script')[0];
 firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var tv,
-  youtube_id = $('#tv').attr('_youtubeID');
+youtube_id = $('#tv').attr('_youtubeID');
 endSeconds = $('#tv').attr('_endSeconds');
+$('#tv').attr('width',0);
+$('#tv').attr('height',0);
 
 playerDefaults = {autoplay: 1, autohide: 1, modestbranding: 0, rel: 0, showinfo: 0, controls: 0, disablekb: 1, enablejsapi: 0, iv_load_policy: 3, loop: 1,wmode: 'opaque'};
 var vid = [
@@ -26,6 +28,7 @@ function onYouTubePlayerAPIReady(){
 function onPlayerReady(){
   tv.loadVideoById(vid[currVid]);
   tv.mute();
+  vidRescale();
 }
 
 function onPlayerStateChange(e) {
@@ -38,7 +41,6 @@ function onPlayerStateChange(e) {
 }
 
 function vidRescale(){
-
   var w = $(window).width()+200,
     h = $(window).height()+200;
 
