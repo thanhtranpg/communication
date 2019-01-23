@@ -107,3 +107,67 @@ for ( var i=0, len = galleryElems.length; i < len; i++ ) {
 }
 
 
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+ span.onclick = function() {
+   modal.style.display = "none";
+ }
+
+// When the user clicks anywhere outside of the modal, close it
+ window.onclick = function(event) {
+  if (event.target == modal) {
+     modal.style.display = "none";
+  }
+}
+
+// tab
+
+window.addEventListener("load", function() {
+	// store tabs variable
+	var myTabs = document.querySelectorAll("ul.nav-tabs > li");
+  function myTabClicks(tabClickEvent) {
+		for (var i = 0; i < myTabs.length; i++) {
+			myTabs[i].classList.remove("active");
+		}
+		var clickedTab = tabClickEvent.currentTarget;
+		clickedTab.classList.add("active");
+		tabClickEvent.preventDefault();
+		var myContentPanes = document.querySelectorAll(".tab-pane");
+		for (i = 0; i < myContentPanes.length; i++) {
+			myContentPanes[i].classList.remove("active");
+		}
+		var anchorReference = tabClickEvent.target;
+		var activePaneId = anchorReference.getAttribute("href");
+		var activePane = document.querySelector(activePaneId);
+		activePane.classList.add("active");
+	}
+	for (i = 0; i < myTabs.length; i++) {
+		myTabs[i].addEventListener("click", myTabClicks)
+	}
+});
+
+
+$(document).ready(function(){
+	$('.list-video li').click(function(event) {
+		/* Act on the event */
+		var link = $(this).attr('data-link');
+		$('#video-id').attr('src', link);
+  });
+  $('.list-image li').click(function(event) {
+		/* Act on the event */
+		var link = $(this).attr('data-link');
+		$('#id-img').attr('src', link);
+	});
+});
