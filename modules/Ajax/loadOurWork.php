@@ -20,7 +20,7 @@ $sql = "SELECT * FROM ".PREFIX_TABLE."ourwork $where  ORDER BY id desc limit $st
 			if (!empty($arr))
 			{
 				foreach ($arr as $item){
-					$our_work_content .= '<div class="tab-content__item" data-aos="fade-up" onclick="javascript:load_pop_up(\''.$item['title'].'\');">';
+					$our_work_content .= '<div class="tab-content__item" data-aos="fade-up" onclick="javascript:load_our_work_media(\''.$item['id'].'\',\'img\');">';
 					$our_work_content .= '
 					<figure class="figure tab-content__figure" style="background-image: url(\''.ImageUrl::getItemImage('610',true,true,$item['image'],$item['id'],'ourwork').'?v='.uniqid().'\')"></figure>
                         <div class="tab-content__inner">

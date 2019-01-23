@@ -1,3 +1,6 @@
+<div id="myModalMedia" class="modal-popup">
+    
+</div>
 <style type="text/css">
   .modal {
   display: none; /* Hidden by default */
@@ -89,6 +92,33 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+var modal_media = document.getElementById('myModalMedia');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span_media = document.getElementById("close_media");
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal_media.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+ span_media.onclick = function() {
+   modal_media.style.display = "none";
+ }
+
+// When the user clicks anywhere outside of the modal, close it
+ window.onclick = function(event) {
+  if (event.target == modal_media) {
+     modal_media.style.display = "none";
+  }
+}
+
+// tab
+
 
   $('#send_email_contact').click(function(){
     var txtName = $('#txtName').val(); 
@@ -231,11 +261,12 @@ window.onclick = function(event) {
     	   url:"modules/Ajax/loadOurWorkMedia.php",
     	   dataType:"html",
     	   success:function(data){
-    	   	$('.load_media').html(data);
+          $('#myModalMedia').show();
+    	   	$('#myModalMedia').html(data);
       	   }									
   	   });		
 	}
-
+  
 	function media_play(a,mes){
 		$(a).attr('_id',mes);
 		console.log($(a).attr('href'));

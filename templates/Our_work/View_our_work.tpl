@@ -27,9 +27,9 @@
         <div class="small-container card-sub__container">
             <div class="card-sub__list">
             	{foreach from=$ourworks name=ourwork item=ourwork}
-                    <!-- <div class="card-sub__item" data-aos="fade-up" onclick="load_our_work_media({$ourwork.id},'img');" > -->
-                    <div class="card-sub__item" data-aos="fade-up" id="myBtn" >
-                    <figure class="figure card-sub__figure" style="background-image: url('/uploads/')"></figure>
+                    <!-- <div class="card-sub__item" data-aos="fade-up" onclick="load_our_work_media({$ourwork.id},'img');  id="myBtn"" > -->
+                    <div class="card-sub__item" data-aos="fade-up" onclick="load_our_work_media({$ourwork.id},'img');" >
+                    <figure class="figure card-sub__figure" style="background-image: url('{insert name=getItemImage img=$ourwork.image id=$ourwork.id folder='ourwork' type='610'}')"></figure>
                     <div class="card-sub__inner">
                         <h5 class="card-sub__sub-title sub-link">{$ourwork.title}</h5>
                         
@@ -48,85 +48,5 @@
 <!-- <div style="background: #807f7f" class="load_media">
     
 </div> -->
-<div id="myModal" class="modal-popup">
-    <div class="modal-center">
-    <!-- Modal content -->
-        <div class="modal-media__content">
-            <span class="close">&times;</span>
-            <div class="modal-header">
-                <h2 class="sub-heading">
-                    KPOP LOVER FESTIVAL 2018
-                </h2>
-                <p class="p">A K-POP Dance Cover Contest for K-POP Fan Community</p>
-            </div>
-            <div class="modal-body toggle">
-                <div class="panels">
-                    <div class="row-col library tab-pane panel" id="video">
-                        <div class="col-8">
-                            <div class="library-box">
-                                <iframe id="video-id" src="https://www.youtube.com/embed/4q7eL9Kvp1E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="library-list list-video">
-                                <ul>
-                                    <li data-link="https://www.youtube.com/embed/4q7eL9Kvp1E">
-                                        <img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500 alt="">
-                                        <span class=button-media><i class="fa fa-play"></i></span>
-                                    </li>
-                                    <li data-link="https://www.youtube.com/embed/Pk0yp3GdNss">
-                                        <img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-                                        <span class=button-media><i class="fa fa-play"></i></span>
-                                    </li>
-                                    <li data-link="https://www.youtube.com/embed/Pk0yp3GdNss">
-                                        <img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-                                        <span class=button-media><i class="fa fa-play"></i></span>
-                                    </li>
-                                    <li data-link="https://www.youtube.com/embed/TjmaTbRzGnQ">
-                                        <img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-                                        <span class=button-media><i class="fa fa-play"></i></span>
-                                    </li>
-                                    <li data-link="https://www.youtube.com/embed/Pk0yp3GdNss">
-                                        <img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-                                        <span class=button-media><i class="fa fa-play"></i></span>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row-col library tab-pane panel active" id="image">
-                        <div class="col-8">
-                            <div class="library-box">
-                                <img id="id-img"src="http://wac.2f9ad.chicdn.net/802F9AD/u/joyent.wme/public/wme/assets/6128a9b2-7ada-11e6-96e0-8905cd656caf.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="col-4">
-                            <div class="library-list list-image">
-                                <ul>
-                                    <li data-link="https://hikingnewzealand.com/assets/Uploads/_resampled/ResizedImage500370-Eastern-Epic-Adventure-Safari-19.jpg">
-                                        <img src="https://hikingnewzealand.com/assets/Uploads/_resampled/ResizedImage500370-Eastern-Epic-Adventure-Safari-19.jpg" alt="">
-                                    </li>
-                                    <li data-link="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
-                                        <img src="https://images.pexels.com/photos/236047/pexels-photo-236047.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
-                                    </li>
-                                    <li data-link="https://hikingnewzealand.com/assets/Uploads/_resampled/ResizedImage500370-Eastern-Epic-Adventure-Safari-19.jpg">
-                                        <img src="https://hikingnewzealand.com/assets/Uploads/_resampled/ResizedImage500370-Eastern-Epic-Adventure-Safari-19.jpg" alt="">
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <ul class="clearfix tabs nav-tabs modal-nav">
-                    <li class="tab active">
-                        <a href="#image">Image</a>
-                    </li>
-                    <li class="tab">
-                        <a href="#video">Video</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
+
 
