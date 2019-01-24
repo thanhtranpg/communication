@@ -1,7 +1,11 @@
 <footer class="footer" data-aos="fade-up">
     <div class="container footer__container">
         <div class="nav__logo">
-            <a href="/" > <figure class="logo__figure" style="background-image: url('/uploads/{$logo.image}')"></figure></a>
+            <a href="/" >
+                <figure class="logo__figure" style="background-image: url('/uploads/{$logo.image}')"></figure>
+                <figure class="logo__figure logo__figure-hover" style="background-image: url('../../www/assets/imgs/logored.png')">
+                </figure>
+            </a>
         </div>
         <nav class="nav footer__nav">
             <ul class="footer__list">

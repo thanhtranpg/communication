@@ -1,7 +1,12 @@
 <header class="header">
     <div class="container header__container">
         <div class="nav__logo">
-            <a href="/" > <figure class="logo__figure" style="background-image: url('/uploads/{$logo.image}')"></figure></a>
+            <a href="/" >
+                 <figure class="logo__figure" style="background-image: url('/uploads/{$logo.image}')">
+                </figure>
+                <figure class="logo__figure logo__figure-hover" style="background-image: url('../../www/assets/imgs/logored.png')">
+                </figure>
+            </a>
         </div>
         {if $main !='home'}
             <div class="header__title header-title">{$head_title}</div>
