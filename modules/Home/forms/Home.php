@@ -44,7 +44,9 @@ class HomeForm extends Form{
           }
            //echo "<pre>";
            //print_r($product_cat);die;
-
+        $row_social = DB::select(PREFIX_TABLE . 'about_us', 'id = 8');
+        $socaial = System::post_db_parse_html($row_social['des']);
+        $display->add('socaial', $socaial);
         $display->add('ourwork_cat', $product_cat);
         $display->add('youtube_id_background', CGlobal::$configs['youtube_id']);
         $display->add('endSecond', CGlobal::$configs['endSecond']);
