@@ -3,7 +3,7 @@ class MaintenanceForm extends Form{
 	function MaintenanceForm(){
 		Form::Form('MaintenanceForm');	
         
-       
+       CGlobal::$website_title = CGlobal::$configs['web_name'];	 
 			
 		//$this->link_css('style/styles.css');		
 	}	
