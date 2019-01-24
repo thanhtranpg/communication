@@ -105,7 +105,7 @@
         {/foreach}
 
         <section class="form-home">
-            <figure class="figure form-home__figure" style="background-image: url(/uploads/{$row_conact.image}')"></figure>
+            <figure class="figure form-home__figure" style="background-image: url('/uploads/{$row_conact.image}')"></figure>
             <div class="form-contact form-contact--home">
                 <div class="container form-contact__container">
                     <div class="form-contact__content">
