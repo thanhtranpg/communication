@@ -20,7 +20,7 @@
         <div class="tabs">
             <div class="small-container tabs__container">
               <span class="tabs__name tabs__name--active" data-aos="fade-up">
-                  <a href="{$ourwork_link}" class="link-menu" target="_blank">All</a>
+                  <a href="{$ourwork_link}" class="link-menu" >All</a>
               </span>
               {foreach from=$ourwork_cats name=ourwork_cat item=ourwork_cat}
                 <span class="tabs__name" data-aos="fade-up">

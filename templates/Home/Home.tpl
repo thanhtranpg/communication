@@ -32,7 +32,7 @@
                         <div class="p hero__description" >{$home_description}
                         </div>
                         <div class="hero__cta" >
-                            <a  href="{$about_link}" target="_blank" class="button-primary p button-transform">
+                            <a  href="{$about_link}" class="button-primary p button-transform">
                                 <span class="hover">About Us</span>
                                 <span class="transform">About Us</span>
                                 <span class="bg-hover"></span>
@@ -52,7 +52,7 @@
                     <h1 class="sub-heading hero__heading heading--underline" data-aos="fade-up" data-aos-delay="300" data-item="1">{$banner.title}</h1>
                     <div class="p hero__description" data-aos="fade-up" data-item="2" data-aos-delay="800">{$banner.description}
                     </div>
-                    <a  href="{$service_link}" target="_blank" class="button-primary p button-transform" data-aos="fade-up" data-item="2" data-aos-delay="800">
+                    <a  href="{$service_link}" class="button-primary p button-transform" data-aos="fade-up" data-item="2" data-aos-delay="800">
                         <span class="hover">Services</span>
                         <span class="transform">Services</span>
                         <span class="bg-hover"></span>
@@ -68,7 +68,7 @@
                         <h5 class="sub-heading card__heading heading--underline">{$ourwork.title}</h5>
                         <div class="card__description p">{$ourwork.description}</div>
                         <div class="card__footer">
-                        <a   href="{$ourwork.href}" target="_blank" class="button-primary button-transform">
+                        <a   href="{$ourwork.href}" class="button-primary button-transform">
                             <span class="hover">OUR WORKS</span>
                             <span class="transform">OUR WORKS</span>
                             <span class="bg-hover"></span>
