@@ -109,8 +109,8 @@
             <div class="form-contact form-contact--home">
                 <div class="container form-contact__container">
                     <div class="form-contact__content">
-                        <div class="form-contact__col form-contact__col--left" data-aos="fade-up">
-                            <h5 class="form-contact__heading sub-heading heading--underline">CONTACT US</h5>
+                        <div class="form-contact__col form-contact__col--left" >
+                            <h5 class="form-contact__heading sub-heading heading--underline" data-aos="fade-up">CONTACT US</h5>
                             <div class="message_email"></div>
                             <form class="form-contact__form">
                                 <input class="form-input form-contact__input" placeholder="Full Name" name="txtName" id="txtName" required/>
