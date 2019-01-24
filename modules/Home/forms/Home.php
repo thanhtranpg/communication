@@ -20,6 +20,15 @@ class HomeForm extends Form{
            $display->add('banner',$row);
         }
 
+        $sql_contact = "SELECT * FROM ".PREFIX_TABLE."adv WHERE status = 1 and catid=2  ORDER BY ord Desc limit 1";
+        $arr_contact = DB::query($sql_contact);   
+
+        if (!empty($arr_contact))
+        {
+          while ($row_conact = mysql_fetch_assoc($arr_contact)) 
+           $display->add('row_conact',$row_conact);
+        }
+
         
         $where = ' Where status =1 ';
         $sql = "SELECT * FROM " . PREFIX_TABLE . "ourwork_cat $where ORDER BY ord asc ";

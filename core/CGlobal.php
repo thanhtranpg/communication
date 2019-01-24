@@ -34,6 +34,7 @@ class CGlobal{
                             5 => array('title'=>'Carrers', 'w'=>'1920','h'=>'1080'),
                             6 => array('title'=>'Contact us', 'w'=>'1920','h'=>'1080'),
                             7 => array('title'=>'Our Works', 'w'=>'1920','h'=>'1080'),
+                            7 => array('title'=>'Contact Us in Home', 'w'=>'1920','h'=>'1080'),
 						);	
 						
 			
