@@ -18,6 +18,7 @@
     @media screen and (max-height: 650px) {
       height: auto;
       min-height: 100vh;
+      padding-top: 0;
     }
   }
   &:after {
@@ -187,8 +188,8 @@
     justify-content: flex-end;
     text-align: center;
     .hero-video__buton {
-      width: 80px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
       background: transparent;
       border: 0px;
       transition: all 0.5s ease-in-out;
@@ -202,8 +203,8 @@
       }
       &:before {
           content: '';
-          width: 80px;
-          height: 80px;
+          width: 60px;
+          height: 60px;
           position: absolute;
           top: 50%;
           left: 50%;
@@ -236,15 +237,18 @@
         }
       }
       i {
-        font-size: 32px;
+        font-size: 25px;
         color: #ff0000;
         transition: all 0.5s ease-in-out;
+        @media screen and (min-width: 1024px) {
+          font-size: 32px;
+        }
       }
     }
   }
 
   .hero__content {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     @media screen and (min-width: 1024px) {
       max-width: 650px;
       margin-bottom: 0;

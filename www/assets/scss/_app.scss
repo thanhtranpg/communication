@@ -52,13 +52,14 @@ body {
 }
 
 .heading {
-  font-size: 68px;
+  font-size: 50px;
   font-family: "League Gothic";
   font-weight: normal;
-  letter-spacing: 1.9px;
   text-transform: uppercase;
+  letter-spacing: 1.2px;
   @media screen and (min-width: 1280px) {
     font-size: 100px;
+    letter-spacing: 1.9px;
   }
   @media screen and (min-width: 1440px) {
     font-size: 120px;
@@ -99,13 +100,13 @@ body {
 }
 
 .p {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.6;
   @media screen and (min-width: 768px) {
-    font-size: 18px;
+    font-size: 20px;
   }
   @media screen and (min-width: 1440px) {
-    font-size: 20px;
+    font-size: 21px;
   }
   @media screen and (min-width: 1500px) {
     font-size: 22px;
@@ -276,14 +277,18 @@ body {
 
 .button {
   display: block;
-  height: 64px;
-  line-height: 64px;
+  height: 54px;
+  line-height: 54px;
   color: #ffffff;
   text-align: center;
   transition: all 0.5s ease-in-out;
   border-radius: 3px;
   font-weight: 700;
   cursor: pointer;
+  @media screen and (min-width: 768px) {
+    height: 64px;
+    line-height: 64px;
+  }
   &:active {
     outline: none;
   }
@@ -291,11 +296,15 @@ body {
 
 .button-transform{
   display: block;
-  height: 64px;
-  line-height: 64px;
+  height: 54px;
+  line-height: 54px;
   color: #fff;
   overflow: hidden;
   position: relative;
+  @media screen and (min-width: 768px) {
+    height: 64px;
+    line-height: 64px;
+  }
   &:hover {
     .hover{
       transform: translate3d(0,0,0);
