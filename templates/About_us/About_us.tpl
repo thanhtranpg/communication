@@ -97,7 +97,7 @@
             <h3 class="card-client__heading sub-heading heading--underline" data-aos="fade-up">OUR CLIENTS</h3>
             <div class="card-client__list">
                 {foreach from=$our_clients name=client item=client}
-                    <div class="card-client__item" data-aos="fade-up"  onclick="window.open('{$client.link}', '_blank');">
+                    <div style="cursor: pointer;" class="card-client__item" data-aos="fade-up"  onclick="window.open('{$client.link}', '_blank');">
                         <figure class="figure card-client__figure" style="background-image: url('/uploads/{$client.image}')"></figure>
                     </div>
                 {/foreach}
