@@ -11,8 +11,8 @@
         {if $main !='home'}
             <div class="header__title header-title">{$head_title}</div>
         {/if}
-        <div class="header__nav">
-            <button class="button-header" ng-click="toggle = !toggle">
+        <div class="header__nav" style="cursor: pointer;">
+            <button class="button-header" ng-click="toggle = !toggle" style="cursor: pointer;">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
