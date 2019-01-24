@@ -51,7 +51,7 @@
                         <input class="form-input form-contact__input" placeholder="Company/Organization" name="txtCompany" id="txtCompany" required />
                         <textarea class="form-textarea form-contact__textarea" rows="8" name="txtDetail" id="txtDetail" required >Project Detail</textarea>
                     </form>
-                    <div class="form-contact__footer" data-aos="fade-up">
+                    <div class="form-contact__footer" >
                         <button id="send_email_contact" class="button-secondary button-transform">
                             <span class="hover">SEND</span>
                             <span class="transform">SEND</span>

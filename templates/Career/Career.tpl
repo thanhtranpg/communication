@@ -43,12 +43,12 @@
             <h1 class="heading heading--underline form-job__heading" data-aos="fade-up">SEND US A MESSAGE</h1>
             <div id="message_email" class="message_email"></div>
             
-            <form class="form-job__form" data-aos="fade-up" method="post">
+            <form class="form-job__form"  method="post">
                 <input class="form-input form-job__input" placeholder="Name" name="txtName" id="txtName" required/>
                 <input class="form-input form-job__input" placeholder="E-mail Addresss" name="txtEmail" id="txtEmail" required/>
                 <textarea class="form-textarea form-job__textarea" rows="10" name="txtDetail" id="txtDetail" required>Your message here</textarea>
             </form>
-            <div class="form-job__footer" data-aos="fade-up">
+            <div class="form-job__footer" >
                 <button id="send_email_career" class="button-secondary button-transform">
                     <span class="hover">SEND</span>
                     <span class="transform">SEND</span>
