@@ -38,15 +38,15 @@
   font-size: 18px!important;
 }
 /* The Close Button */
-.close {
+.close_email {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.close_email:hover,
+.close_email:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -57,7 +57,7 @@
 
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close">&times;</span>
+    <span class="close_email">&times;</span>
     <h1>Notification</h1>
     <hr/>
     <p>Contact sent was successful </p>
@@ -77,7 +77,7 @@ var modal = document.getElementById('myModal');
 var btn = document.getElementById("myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("close_email")[0];
 
 
 
@@ -92,32 +92,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-var modal_media = document.getElementById('myModalMedia');
 
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span_media = document.getElementById("close_media");
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  modal_media.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
- span_media.onclick = function() {
-   modal_media.style.display = "none";
- }
-
-// When the user clicks anywhere outside of the modal, close it
- window.onclick = function(event) {
-  if (event.target == modal_media) {
-     modal_media.style.display = "none";
-  }
-}
-
-// tab
 
 
   $('#send_email_contact').click(function(){
