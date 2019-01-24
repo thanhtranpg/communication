@@ -3,8 +3,7 @@ class MaintenanceForm extends Form{
 	function MaintenanceForm(){
 		Form::Form('MaintenanceForm');	
         
-       $PageTitle= 'Công ty cổ phần dược phẩm PQA, Thuốc Nam PQA, Thuốc đông y pqa';    	
-		CGlobal::$website_title = $PageTitle;		 
+       
 			
 		//$this->link_css('style/styles.css');		
 	}	
