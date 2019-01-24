@@ -141,7 +141,11 @@
     width: 100%;
     display: flex;
     align-items: center;
+    flex-direction: column;
     box-sizing: border-box;
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+    }
   }
 
   .hero__heading {
@@ -183,22 +187,23 @@
     justify-content: flex-end;
     text-align: center;
     .hero-video__buton {
-      width: 120px;
-      height: 120px;
+      width: 80px;
+      height: 80px;
       background: transparent;
       border: 0px;
       transition: all 0.5s ease-in-out;
-      display: none;
       position: relative;
       @media screen and (min-width: 1024px) {
+        width: 120px;
+        height: 120px;
         display: flex;
         align-items: center;
         justify-content: center;
       }
       &:before {
           content: '';
-          width: 120px;
-          height: 120px;
+          width: 80px;
+          height: 80px;
           position: absolute;
           top: 50%;
           left: 50%;
@@ -206,6 +211,10 @@
           border: 3px solid #ff0000;
           border-radius: 50%;
           transition: all 0.3s ease-in-out;
+          @media screen and (min-width: 1024px) {
+            width: 120px;
+            height: 120px;
+          }
         }
       &:focus {
         outline: none;
@@ -213,13 +222,17 @@
       &:hover {
         border-color: transparent;
         &:before {
-          content: '';
-          width: 140px;
-          height: 140px;
-          border-color: #fff;
+          @media screen and (min-width: 1024px) {
+            content: '';
+            width: 140px;
+            height: 140px;
+            border-color: #fff;
+          }
         }
         i {
-          color: #fff;
+          @media screen and (min-width: 1024px) {
+            color: #fff;
+          }
         }
       }
       i {
@@ -231,8 +244,10 @@
   }
 
   .hero__content {
+    margin-bottom: 40px;
     @media screen and (min-width: 1024px) {
       max-width: 650px;
+      margin-bottom: 0;
     }
     @media screen and (min-width: 1280px) {
       max-width: 715px;

@@ -83,6 +83,21 @@ body {
   }
 }
 
+.sub-heading2 {
+  font-family: "League Gothic";
+  font-size: 30px;
+  letter-spacing: 1.7px;
+  @media screen and (min-width: 1024px) {
+    font-size: 40px;
+  }
+  @media screen and (min-width: 1440px) {
+    font-size: 50px;
+  }
+  @media screen and (min-width: 1500px) {
+    font-size: 60px;
+  }
+}
+
 .p {
   font-size: 16px;
   line-height: 1.6;
@@ -242,6 +257,7 @@ body {
   transition: all 0.5s ease-in-out;
   border-radius: 3px;
   font-weight: 700;
+  cursor: pointer;
   &:active {
     outline: none;
   }
@@ -383,6 +399,7 @@ body.header__menu-active {
   button.button-header {
     span {
       margin-bottom: 0;
+      transition: all 0.5s ease-in-out;
       &:first-child {
         transform: translateY(-4.5px) rotate(45deg);
       }
@@ -416,6 +433,7 @@ body.header__menu-active {
   margin: auto;
   opacity: 0;
   transition: opacity 0.5s;
+  filter: grayscale(100%);
 }
 .tv .screen.active {
   opacity: 1;

@@ -3,10 +3,10 @@
         <div class="modal-media__content">
             <span class="close" id="close_media">&times;</span>
             <div class="modal-header">
-                <h2 class="sub-heading">
+                <h2 class="sub-heading2">
                     {$ourwork.title}
                 </h2>
-                <p class="p media_title">{$first_img.title}</p>
+                <p class="p-small media_title">{$first_img.title}</p>
             </div>
             <div class="modal-body toggle">
                 <div class="panels">
