@@ -40,7 +40,7 @@ class HomeForm extends Form{
                 $row['href'] = Url::build('our_work', array('catid' => $row['catid'], 'xtname' =>
                                 System::safe_title($row['title'])));
                 $row['title'] = System::post_db_parse_html($row['title']);
-                $sql_ourwork = "SELECT id,title, image FROM " . PREFIX_TABLE . "ourwork Where status =1 and catid = ".$row['catid']." ORDER BY ord desc ";
+                $sql_ourwork = "SELECT id,title, image FROM " . PREFIX_TABLE . "ourwork Where status =1 and catid = ".$row['catid']." ORDER BY ord asc ";
         		$result_ourwork = DB::query($sql_ourwork);
         		if ($result_ourwork) {
         			while ($row_ourwork = mysql_fetch_assoc($result_ourwork)){

@@ -92,6 +92,12 @@ $('.card__slide').each(function(e){
     $(this).find('.total').text(total);
     var current = $(this).find('.current').text(1);
 });
+$('.card__item').hover(function(){
+   var card_side = $(this).parents().parents().parents().eq(2);
+   console.log(card_side);
+     var index = card_side.find('.is-selected').index();
+      card_side.find('.current').text(index + 1);
+});
 });
 
 
