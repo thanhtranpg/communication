@@ -439,11 +439,25 @@ body.header__menu-active {
   justify-content: center; }
   .videopopupjs .videopopupjs__content {
     margin-top: 10px;
-    max-height: 600px !important;
+    max-height: 300px;
     height: 100% !important; }
+    @media screen and (min-width: 768px) {
+      .videopopupjs .videopopupjs__content {
+        max-height: 500px; } }
+    @media screen and (min-width: 1024px) {
+      .videopopupjs .videopopupjs__content {
+        max-height: calc(100vh - 100px);
+        position: relative;
+        max-width: calc(90vw - 50px) !important; } }
   .videopopupjs .videopopupjs__close {
     width: 100% !important;
     text-align: right; }
+    @media screen and (min-width: 1024px) {
+      .videopopupjs .videopopupjs__close {
+        width: calc(100% + 50px) !important;
+        position: absolute;
+        left: 0;
+        top: 10px; } }
     .videopopupjs .videopopupjs__close:after {
       content: none !important; }
     .videopopupjs .videopopupjs__close .video__bars {

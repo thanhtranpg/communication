@@ -519,13 +519,26 @@ body.header__menu-active {
   align-items: center;
   justify-content: center;
   .videopopupjs__content {
-    margin-top: 10px;
-    max-height: 600px!important;
+    max-height: 300px;
     height: 100%!important;
+    @media screen and (min-width: 768px){
+      max-height: 500px;
+    }
+    @media screen and (min-width: 1024px){
+      max-height: calc(100vh - 100px);
+      position: relative;
+      max-width: calc(90vw - 50px)!important;
+    }
   }
   .videopopupjs__close {
     width: 100%!important;
     text-align: right;
+    @media screen and (min-width: 1024px){
+      width: calc(100% + 50px)!important;
+      position: absolute;
+      left: 0;
+      top: 10px;
+    }
     &:after {
       content: none!important;
     }
