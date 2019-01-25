@@ -73,7 +73,7 @@ function check_post_submit(){
         <div class="float_left">
         	<select name="status" class="input_text" style="width:200px;">
             	<option value="1" {if $item.status == 1}selected{/if}>Kích hoạt</option>
-            	<option value="0" {if $item.status == 0}selected{/if}>Không kích hoạt</option>                
+            	<option value="2" {if $item.status == 0}selected{/if}>Không kích hoạt</option>                
             </select>
         </div>
         <div class="clear paddingBottom5"></div>           
@@ -114,7 +114,7 @@ function check_post_submit(){
         <select name="s_status" class="input_text" style="width:200px;">
         	<option value="" {if $s_status == ""}selected{/if}>...Tất cả</option>  
             <option value="1" {if $s_status == 1}selected{/if}>Kích hoạt</option>
-            <option value="0" {if $s_status === 0}selected{/if}>Không kích hoạt</option>                
+            <option value="2" {if $s_status === 2}selected{/if}>Không kích hoạt</option>                
         </select>
     </div>
     <div class="clear paddingBottom5"></div>

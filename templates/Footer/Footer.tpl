@@ -35,7 +35,7 @@
                     <h5 class="footer__label label">CONTACT</h5>
                     <div class="footer__description p-small">
                         {$email} <br/>
-                        {$hotline}
+                        <span style="color: #fff!important">{$hotline}</span>
                     </div>
                 </div>
                 <div class="footer__col col-right">

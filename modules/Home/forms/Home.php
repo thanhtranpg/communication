@@ -20,6 +20,15 @@ class HomeForm extends Form{
            $display->add('banner',$row);
         }
 
+        $sql_contact = "SELECT * FROM ".PREFIX_TABLE."adv WHERE status = 1 and catid=8  ORDER BY ord Desc limit 1";
+        $arr_contact = DB::query($sql_contact);   
+
+        if (!empty($arr_contact))
+        {
+          while ($row_conact = mysql_fetch_assoc($arr_contact)) 
+           $display->add('row_conact',$row_conact);
+        }
+
         
         $where = ' Where status =1 ';
         $sql = "SELECT * FROM " . PREFIX_TABLE . "ourwork_cat $where ORDER BY ord asc ";
@@ -44,7 +53,9 @@ class HomeForm extends Form{
           }
            //echo "<pre>";
            //print_r($product_cat);die;
-
+        $row_social = DB::select(PREFIX_TABLE . 'about_us', 'id = 9');
+        $socaial = System::post_db_parse_html($row_social['des']);
+        $display->add('socaial', $socaial);
         $display->add('ourwork_cat', $product_cat);
         $display->add('youtube_id_background', CGlobal::$configs['youtube_id']);
         $display->add('endSecond', CGlobal::$configs['endSecond']);

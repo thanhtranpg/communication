@@ -28,12 +28,13 @@ class CGlobal{
     static $website_image="images/logo.jpg";					
 	static $adv_zone = array(
 							1 => array('title'=>'Logo', 'w'=>'197','h'=>'80'),
-                            2 => array('title'=>'Home', 'w'=>'1920','h'=>'1080'),
+                            2 => array('title'=>'SOLUTIONS & TRUST in Home', 'w'=>'1920','h'=>'1080'),
                             3 => array('title'=>'About us', 'w'=>'1920','h'=>'1080'),
                             4 => array('title'=>'Services', 'w'=>'1920','h'=>'1080'),
                             5 => array('title'=>'Carrers', 'w'=>'1920','h'=>'1080'),
                             6 => array('title'=>'Contact us', 'w'=>'1920','h'=>'1080'),
                             7 => array('title'=>'Our Works', 'w'=>'1920','h'=>'1080'),
+                            8 => array('title'=>'Contact Us in Home', 'w'=>'1920','h'=>'1080'),
 						);	
 						
 			

@@ -13,14 +13,14 @@ require_once '../../core/Init.php';
 	$type = System::getParam('type');
 
 	$to_email = CGlobal::$configs['email'];
-	$mes = "<b>Thư liên hệ từ ".WEB_ROOT;
-	$mes .= "<br><br>Thông tin khách hàng:</b><br><br>";
+	$mes = "<b>Email contact</b>";
+	$mes .= "<br><br>Info custom:</b><br><br>";
 	$mes .= "Full Name: <b>$fullname</b><br>";
 	$mes .= "Company: <b>$company</b><br>";
 	$mes .= "Email: <b>$email</b><br>";
 	$mes .= "<br><b>Message</b><br><br>";
     $mes .= $content;	
-    $title='Thu khach hang '.$fullname;
+    $title='Email contact ';
     
     
     $arr['fullname'] = $fullname;

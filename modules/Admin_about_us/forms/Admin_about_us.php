@@ -24,7 +24,8 @@ class Admin_about_usForm extends Form{
 			5=>"Service",
 			6=>"Carrer",
 			7=>"Contact us",
-			8=>"Our Work"
+			8=>"Our Work",
+			9=>"SOLUTIONS & TRUST"
 		);
 		$id = System::getParamInt('id');
 		$id = (empty($id)) ? 1 : $id;

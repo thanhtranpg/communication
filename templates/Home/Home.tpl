@@ -50,7 +50,7 @@
                 <figure class="figure hero__figure" style="background-image: url('/uploads/{$banner.image}')"></figure>
                 <div class="hero__inner">
                     <h1 class="sub-heading hero__heading heading--underline" data-aos="fade-up" data-aos-delay="300" data-item="1">{$banner.title}</h1>
-                    <div class="p hero__description" data-aos="fade-up" data-item="2" data-aos-delay="800">{$banner.description}
+                    <div class="p hero__description" data-aos="fade-up" data-item="2" data-aos-delay="800">{$socaial}
                     </div>
                     <a  href="{$service_link}" class="button-primary p button-transform" data-aos="fade-up" data-item="2" data-aos-delay="800">
                         <span class="hover">Services</span>
@@ -105,7 +105,7 @@
         {/foreach}
 
         <section class="form-home">
-            <figure class="figure form-home__figure" style="background-image: url('../../www/assets/imgs/OurWorks/Demo hover BCSV.png')"></figure>
+            <figure class="figure form-home__figure" style="background-image: url('/uploads/{$row_conact.image}')"></figure>
             <div class="form-contact form-contact--home">
                 <div class="container form-contact__container">
                     <div class="form-contact__content">
