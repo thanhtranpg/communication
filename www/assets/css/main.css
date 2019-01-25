@@ -438,6 +438,7 @@ body.header__menu-active {
   align-items: center;
   justify-content: center; }
   .videopopupjs .videopopupjs__content {
+    margin-top: 10px;
     max-height: 300px;
     height: 100% !important; }
     @media screen and (min-width: 768px) {
@@ -2173,9 +2174,6 @@ nav.nav {
           .modal-media__content .library .col-4 .library-list {
             max-height: 400px; } }
         @media (min-width: 1280px) {
-          .modal-media__content .library .col-4 .library-list {
-            max-height: 420px; } }
-        @media (min-width: 1440px) {
           .modal-media__content .library .col-4 .library-list {
             max-height: 500px; } }
         .modal-media__content .library .col-4 .library-list ul {
