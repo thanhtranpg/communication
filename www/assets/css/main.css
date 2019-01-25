@@ -176,9 +176,11 @@ body {
   .nav__logo a {
     display: block;
     position: relative;
-    width: 197px;
-    height: 80px;
     overflow: hidden; }
+    @media screen and (min-width: 1024px) {
+      .nav__logo a {
+        width: 197px;
+        height: 80px; } }
     .nav__logo a .logo__figure {
       -webkit-transform: translateX(0);
               transform: translateX(0);
@@ -453,6 +455,13 @@ body.header__menu-active {
       .videopopupjs .videopopupjs__close .video__bars:last-child {
         -webkit-transform: translateX(0.55px) rotate(45deg);
                 transform: translateX(0.55px) rotate(45deg); }
+
+a[href^="tel"] {
+  color: inherit;
+  /* Inherit text color of parent element. */
+  text-decoration: none;
+  /* Remove underline. */
+  /* Additional css `propery: value;` pairs here */ }
 
 .hero__container {
   position: relative; }
@@ -1014,7 +1023,8 @@ body.header__menu-active {
       -o-object-fit: cover;
          object-fit: cover;
       -webkit-filter: grayscale(100%);
-              filter: grayscale(100%); }
+              filter: grayscale(100%);
+      transition: all 0.5s ease-in-out; }
   .card .card__col.card__col--left {
     width: 100%;
     margin-bottom: 40px;
@@ -2347,17 +2357,15 @@ nav.nav {
   .header__item a.active {
     color: #ff0000;
     -webkit-text-fill-color: unset; }
-  .header__item a.header__social {
-    margin-right: 20px;
-    -webkit-background-clip: unset;
-    -webkit-text-fill-color: unset;
-    background: none;
-    color: #888; }
-    .header__item a.header__social:hover i {
-      color: #fff; }
-    .header__item a.header__social i {
-      font-size: 28px;
-      transition: all 0.5s ease-in-out; }
+
+.header__social {
+  margin-right: 20px;
+  color: #888; }
+  .header__social:hover i {
+    color: #fff; }
+  .header__social i {
+    font-size: 28px;
+    transition: all 0.5s ease-in-out; }
 
 .header__item--p {
   margin: 20px 0; }

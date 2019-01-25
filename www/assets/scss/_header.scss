@@ -114,22 +114,21 @@
       color: #ff0000;
       -webkit-text-fill-color: unset;
     }
-    &.header__social {
-      margin-right: 20px;
-      -webkit-background-clip: unset;
-      -webkit-text-fill-color: unset;
-      background: none;
-      color: #888;
-      &:hover {
-        i {
-          color: #fff;
-        }
-      }
-      i {
-        font-size: 28px;
-        transition: all 0.5s ease-in-out;
-      }
+  }
+}
+
+
+.header__social {
+  margin-right: 20px;
+  color: #888;
+  &:hover {
+    i {
+      color: #fff;
     }
+  }
+  i {
+    font-size: 28px;
+    transition: all 0.5s ease-in-out;
   }
 }
 

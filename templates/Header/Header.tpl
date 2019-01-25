@@ -33,7 +33,7 @@
                     {/if} 
                 {/foreach}
                 
-                <li class="header__item header__item--social">
+                <li class="header__item--social">
                     <a class="header__social" href="{$facebooklink}" target="_blank"><i class="fa fa-facebook"></i></a>
                     <a class="header__social" href="{$youtubelink}" target="_blank"><i class="fa fa-youtube-play"></i></a>
                 </li>

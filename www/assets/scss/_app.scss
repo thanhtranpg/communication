@@ -208,9 +208,11 @@ body {
   a {
     display: block;
     position: relative;
-    width: 197px;
-    height: 80px;
     overflow: hidden;
+    @media screen and (min-width: 1024px) {
+      width: 197px;
+      height: 80px;
+    }
     .logo__figure {
       transform: translateX(0);
       transition: all 0.25s ease-in-out;
@@ -540,3 +542,8 @@ body.header__menu-active {
   }
 }
 
+a[href^="tel"] {
+  color: inherit; /* Inherit text color of parent element. */
+  text-decoration: none; /* Remove underline. */
+  /* Additional css `propery: value;` pairs here */
+}
