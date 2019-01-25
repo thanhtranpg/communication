@@ -533,12 +533,6 @@ body.header__menu-active {
   .videopopupjs__close {
     width: 100%!important;
     text-align: right;
-    @media screen and (min-width: 1024px){
-      width: calc(100% + 50px)!important;
-      position: absolute;
-      left: 0;
-      top: 10px;
-    }
     &:after {
       content: none!important;
     }

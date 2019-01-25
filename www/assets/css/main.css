@@ -451,12 +451,6 @@ body.header__menu-active {
   .videopopupjs .videopopupjs__close {
     width: 100% !important;
     text-align: right; }
-    @media screen and (min-width: 1024px) {
-      .videopopupjs .videopopupjs__close {
-        width: calc(100% + 50px) !important;
-        position: absolute;
-        left: 0;
-        top: 10px; } }
     .videopopupjs .videopopupjs__close:after {
       content: none !important; }
     .videopopupjs .videopopupjs__close .video__bars {
@@ -2078,8 +2072,8 @@ nav.nav {
 .modal-media__content {
   background-color: #000;
   margin: auto;
-  padding: 50px;
-  width: 85%;
+  padding: 20px 50px;
+  width: 70%;
   color: #fff;
   position: absolute;
   top: 50%;
@@ -2111,7 +2105,7 @@ nav.nav {
         top: -14px; }
   .modal-media__content h2 {
     position: relative;
-    margin: 30px 0; }
+    margin: 20px 0; }
   .modal-media__content .modal-body {
     position: relative; }
   .modal-media__content .modal-nav {
@@ -2171,13 +2165,13 @@ nav.nav {
             overflow-x: auto; } }
         @media (min-width: 600px) {
           .modal-media__content .library .col-4 .library-list {
-            max-height: 400px; } }
+            max-height: 380px; } }
         @media (min-width: 1280px) {
           .modal-media__content .library .col-4 .library-list {
-            max-height: 420px; } }
+            max-height: 400px; } }
         @media (min-width: 1440px) {
           .modal-media__content .library .col-4 .library-list {
-            max-height: 500px; } }
+            max-height: 420px; } }
         .modal-media__content .library .col-4 .library-list ul {
           list-style: none;
           margin: 0;
@@ -2202,7 +2196,7 @@ nav.nav {
   font-size: 40px !important;
   font-weight: bold;
   position: absolute;
-  right: 10px;
+  right: 0px;
   top: 10px;
   width: 47px;
   text-align: center;
