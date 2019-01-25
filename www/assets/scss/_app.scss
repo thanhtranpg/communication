@@ -520,6 +520,8 @@ body.header__menu-active {
   justify-content: center;
   .videopopupjs__content {
     margin-top: 10px;
+    max-height: 600px!important;
+    height: 100%!important;
   }
   .videopopupjs__close {
     width: 100%!important;
@@ -546,4 +548,17 @@ a[href^="tel"] {
   color: inherit; /* Inherit text color of parent element. */
   text-decoration: none; /* Remove underline. */
   /* Additional css `propery: value;` pairs here */
+}
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  iframe, img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
