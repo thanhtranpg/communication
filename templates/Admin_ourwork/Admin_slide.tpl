@@ -37,12 +37,10 @@ function check_post_submit(){
 <div>{$msg}</div>
 <!--Child Menu-->
 <div class="admin_block">
-	<div class="mod_title marginBottom10">Quản ảnh <strong style="color: red; font-size: 14px">{$item_title.title}</strong></div>  
+	<div class="mod_title marginBottom10">Quản ảnh slide home <strong style="color: red; font-size: 14px">{$item_title.title}</strong></div>  
     <div class="menu_child paddingBottom10">
-         <a href="webadmin.php?main={$main}&cmd=list"><img src="style/images/go-back-icon.png" border="0" width="15" height="20"/>Danh sách Our Works</a> |
-         <a style="color: red" href="webadmin.php?main={$main}&cmd=img&id={$id}" style="padding: 3px" >Quản lý ảnh {$item_title.title}</a>|
-
-         <a href="webadmin.php?main={$main}&cmd=video&id={$id}" style="padding: 3px" >Quản lý video {$item_title.title}</a>
+         <a href="webadmin.php?main={$main}&cmd=listcat"><img src="style/images/go-back-icon.png" border="0" width="15" height="20"/>Danh sách danh mục Our Works</a> 
+        
     </div>
 </div>    
 <!--End Child Menu-->
@@ -64,12 +62,14 @@ function check_post_submit(){
         <div class="float_left"><input type="file" id="image" name="image" class="input_text" size="60"/> 
           <div class="clear paddingBottom5"></div>
           {if $item_adjust.media}
-          <img  src="{insert name=getItemImage img=$item_adjust.media id=$item_adjust.id folder='ourwork_image' type='610'}" width="400" /><input type="hidden" name="old_image" value="{$item_adjust.media}" />
+          <img  src="{insert name=getItemImage img=$item_adjust.media id=$item_adjust.id folder='ourwork_slide' type='610'}" width="400" /><input type="hidden" name="old_image" value="{$item_adjust.media}" />
           {/if}
         </div>
         <div class="clear paddingBottom5"></div>
                 
-        
+        <div class="float_left marginRight10" style="width:20%; text-align:right">Thứ tự</div>
+        <div class="float_left"><input type="input" id="ord" name="ord" class="input_text" style="width:460px" value="{$item_adjust.ord}"></div>
+        <div class="clear paddingBottom5"></div>
 		
         <div class="float_left marginRight10" style="width:20%; text-align:right">Trạng thái</div>
         <div class="float_left">
@@ -109,7 +109,8 @@ function check_post_submit(){
             <td class="rowtop">Tiêu đề</td>
           
             <td class="rowtop" width="40">Ảnh</td> 
-			<td class="rowtop" width="40">Sửa</td>         
+            <td class="rowtop" width="40">Thứ Tự</td> 
+			      <td class="rowtop" width="40">Sửa</td>         
             <td class="rowtop" width="40">Xóa</td>
           </tr>
           {foreach from=$arritem name=item item=item}
@@ -118,10 +119,11 @@ function check_post_submit(){
           
             <td class="padding5" style="text-align:left">{$item.title}</td>
           
-            <td><img  src="{insert name=getItemImage img=$item.media id=$item.id folder='ourwork_image' type='610'}" width="100" /></td>
+            <td><img  src="{insert name=getItemImage img=$item.media id=$item.id folder='ourwork_slide' type='610'}" width="100" /></td>
+             <td class="padding5" style="text-align:left">{$item.ord}</td>
             <td><img src="style/images/admin/_{$item.status}.gif" /></td>
-			 <td><a href="webadmin.php?main={$main}&cmd=editimg&cid={$item.id}&id={$id}"><img src="style/images/admin/b_edit.png" border="0" /></a></td>
-            <td><a href="javascript:void(0);" onclick="del_item('webadmin.php?main={$main}&cmd=delimg&id={$id}&cid={$item.id}')"><img src="style/images/admin/b_del.png" border="0" /></a></td>
+			 <td><a href="webadmin.php?main={$main}&cmd=editslide&cid={$item.id}&id={$id}"><img src="style/images/admin/b_edit.png" border="0" /></a></td>
+            <td><a href="javascript:void(0);" onclick="del_item('webadmin.php?main={$main}&cmd=delslide&id={$id}&cid={$item.id}')"><img src="style/images/admin/b_del.png" border="0" /></a></td>
 			
           </tr>
           {/foreach}

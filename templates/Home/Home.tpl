@@ -85,7 +85,7 @@
                                 <div class="card__list carousel" id="list_images_{$i}"  data-flickity>
                                     {foreach from=$ourwork.ourworks item=image}
                                         <div class="card__item carousel-cell">
-                                            <img src="{insert name=getItemImage img=$image.image id=$image.id folder='ourwork' type='610'}" />
+                                            <img src="{insert name=getItemImage img=$image.media id=$image.id folder='ourwork_slide' type='610'}" />
                                             
                                         </div>
                                     {/foreach}

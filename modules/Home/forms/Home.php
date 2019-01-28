@@ -40,11 +40,11 @@ class HomeForm extends Form{
                 $row['href'] = Url::build('our_work', array('catid' => $row['catid'], 'xtname' =>
                                 System::safe_title($row['title'])));
                 $row['title'] = System::post_db_parse_html($row['title']);
-                $sql_ourwork = "SELECT id,title, image FROM " . PREFIX_TABLE . "ourwork Where status =1 and catid = ".$row['catid']." ORDER BY ord asc ";
+                $sql_ourwork = "SELECT * FROM " . PREFIX_TABLE . "ourwork_slide Where status =1 and catid = ".$row['catid']." ORDER BY ord asc ";
         		$result_ourwork = DB::query($sql_ourwork);
         		if ($result_ourwork) {
         			while ($row_ourwork = mysql_fetch_assoc($result_ourwork)){
-        				$row['ourworks'][] = array('id'=>$row_ourwork['id'],'title' => $row_ourwork['title'],'image' =>$row_ourwork['image'] );
+        				$row['ourworks'][] = $row_ourwork;
         			}
         		}
             	$product_cat[]=$row;

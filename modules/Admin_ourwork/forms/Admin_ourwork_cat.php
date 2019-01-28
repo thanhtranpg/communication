@@ -115,7 +115,10 @@ class Admin_ourwork_catForm extends Form{
 	//	$this->beginForm();	
 		global $display;			
 		$cmd = System::getParam('cmd');	
-		$arrcat = DB::select_all(PREFIX_TABLE."ourwork_cat","","ord ASC");		
+		 $sql = "SELECT *,
+					( select count(id) FROM ".PREFIX_TABLE."ourwork_slide media where type = 'slide' and media.catid = ourwork.catid ) as total_img
+					FROM ".PREFIX_TABLE."ourwork_cat as ourwork ORDER BY ord asc";
+		$arrcat = DB::fetch_all($sql);
 		switch ($cmd){
 			case 'addcat':
 			case 'editcat':
@@ -152,6 +155,7 @@ class Admin_ourwork_catForm extends Form{
 				$display->add('listcat',$arrcat);
 				break;
 		}
+		
 		
 		$row=DB::select(PREFIX_TABLE.'config', 'id = 1');
 		$arr = unserialize($row['config']);

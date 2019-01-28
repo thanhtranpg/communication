@@ -18,6 +18,12 @@ class Admin_ourwork extends Module{
 				require_once 'forms/Admin_image.php';
 				$this->add_form(new Admin_imageForm());	
 				break;
+			case 'slide':
+			case 'delslide':
+			case 'editslide':
+				require_once 'forms/Admin_slide.php';
+				$this->add_form(new Admin_slideForm());	
+				break;
 
 			case 'video':
 			case 'delvideo':

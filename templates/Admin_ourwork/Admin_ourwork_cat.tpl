@@ -113,6 +113,7 @@ function check_post_submit(){
             <td class="rowtop">Tên danh mục</td>
             <td class="rowtop">Ảnh</td>
             <td class="rowtop">Mô tả</td>
+            <td class="rowtop">Anh slide</td>
             <td class="rowtop">Thứ tự</td>
             <td class="rowtop">Trạng thái</td>
             <td class="rowtop">Sửa</td>
@@ -130,6 +131,7 @@ function check_post_submit(){
               {/if}
             </td>
             <td class="paddingLeft5" style="text-align:left"><b>{$item.description}</b></td>
+            <td><a class="add_imag" href="webadmin.php?main={$main}&cmd=slide&id={$item.catid}"><strong style="color: blue">{$item.total_img}</strong><br/>Thêm ảnh</td>
             <td class="paddingLeft5" style="text-align:left">{$item.ord}</td>
             <td><img src="style/images/admin/_{$item.status}.gif" /></td>
             <td><a href="webadmin.php?main={$main}&cmd=editcat&catid={$item.catid}"><img src="style/images/admin/b_edit.png" border="0" /></a></td>
