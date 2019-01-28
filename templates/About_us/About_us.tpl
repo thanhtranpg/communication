@@ -21,7 +21,7 @@
         <div class="card-title__container">
             <h3 class="sub-heading card-title__heading heading--underline">OUR MISSIONS</h3>
             <div class="p card-title__description">
-                Create values for clients
+                Create values for clients<br/>
                 Enhance capacity for staffs.
             </div>
         </div>
