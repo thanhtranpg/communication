@@ -95,6 +95,8 @@
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
+  max-height: calc(100vh - 20px);
+  overflow-y: auto;
   @media screen and (max-width: 991px) {
     padding: 25px;
     width: 75%;

@@ -1,7 +1,3 @@
-AOS.init({
-  duration: 1000,
-  easing: 'ease-in'
-});
 
 var tag = document.createElement('script');
 tag.src = 'https://www.youtube.com/player_api';
@@ -76,6 +72,11 @@ $(window).scroll(function() {
 // $("#index_image_8").html("1");
 
 $(document).ready(function() {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-out'
+    });
+    AOS.refresh();
     // $(".flickity-button").click(function(){
     //   var index = $("#list_images_8").find('.is-selected').index();
     //   console.log(index);

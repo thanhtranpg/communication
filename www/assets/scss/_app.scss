@@ -521,28 +521,43 @@ body.header__menu-active {
   .videopopupjs__content {
     max-height: 300px;
     height: 100%!important;
-    @media screen and (min-width: 768px){
-      max-height: 500px;
+    margin-top: 0!important;
+    @media screen and (max-height: 500px){
+      max-height: 300px;
+      overflow-y: auto;
     }
     @media screen and (min-width: 1024px){
-      max-height: calc(100vh - 100px);
+      max-height: max-content;
       position: relative;
-      max-width: calc(90vw - 50px)!important;
+      max-width: calc(90vw - 300px)!important;
     }
   }
   .videopopupjs__close {
-    width: 100%!important;
+    width: 100%;
     text-align: right;
+    height: 10px;
+    @media screen and (max-height: 500px){
+      margin-top: 10px;
+    }
+    @media screen and (min-width: 1024px){
+      height: 20px;
+    }
     &:after {
       content: none!important;
     }
     .video__bars {
-      width: 30px;
+      width: 20px;
       height: 3px;
       display: inline-block;
       background: #fff;
+      @media screen and (min-width: 1024px){
+        width: 30px;
+      }
       &:first-child {
-        transform: translateX(30.5px) rotate(-45deg);
+        transform: translateX(20px) rotate(-45deg);
+        @media screen and (min-width: 1024px){
+          transform: translateX(30.5px) rotate(-45deg);
+        }
       }
       &:last-child {
         transform: translateX(0.55px) rotate(45deg);
