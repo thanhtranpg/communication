@@ -16,7 +16,7 @@
                             	{if $first_video}
                                 <iframe data-link="{$first_video.title}" id="video-id" src="https://www.youtube.com/embed/{$first_video.media}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 {else}
-                            	<img id="id-img"src="/images/nodata.jpg" data-link="" alt="">
+                            	<img src="/images/nodata.jpg" data-link="" alt="">
                             	{/if}
                             </div>
                         </div>
@@ -39,7 +39,7 @@
                             	{if $first_img}
                                 <img id="id-img"src="{insert name=getItemImage img=$first_img.media id=$first_img.id folder='ourwork_image' type='1680'}" data-link="{$first_img.title}" alt="">
                             	{else}
-                            	<img id="id-img"src="/images/nodata.jpg" data-link="" alt="">
+                            	<img src="/images/nodata.jpg" data-link="" alt="">
                             	{/if}
                             </div>
                         </div>
