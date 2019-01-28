@@ -13,7 +13,7 @@
                     <div class="row-col library tab-pane panel" id="video">
                         <div class="col-8">
                             <div class="library-box videoWrapper">
-                            	{if $first_img}
+                            	{if $first_video}
                                 <iframe data-link="{$first_video.title}" id="video-id" src="https://www.youtube.com/embed/{$first_video.media}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 {else}
                             	<img id="id-img"src="/images/nodata.jpg" data-link="" alt="">
