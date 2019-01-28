@@ -109,7 +109,7 @@
                 }, 200);
             }
 
-            $(".videopopupjs, .videopopupjs__close").click(function(){
+            $(".videopopupjs__close").click(function(){
                 $(".videopopupjs").addClass("videopopupjs--hide").delay(515).queue(function() { $(this).remove(); });
             });
         });
