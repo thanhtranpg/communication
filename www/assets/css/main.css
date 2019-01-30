@@ -447,8 +447,8 @@ body.header__menu-active {
         overflow-y: auto; } }
     @media screen and (min-width: 1024px) {
       .videopopupjs .videopopupjs__content {
+        max-height: calc(100vh - 200px);
         max-height: -webkit-max-content;
-        max-height: -moz-max-content;
         max-height: max-content;
         position: relative;
         max-width: calc(90vw - 300px) !important; } }
@@ -1091,6 +1091,9 @@ a[href^="tel"] {
         margin-bottom: 40px;
         max-width: 600px;
         text-align: left; } }
+    @media screen and (min-width: 1440px) {
+      .card .card__description {
+        max-width: 100%; } }
   .card .card__heading {
     margin-bottom: 30px;
     text-align: center;
@@ -1268,6 +1271,9 @@ a[href^="tel"] {
         margin-bottom: 40px;
         max-width: 600px;
         text-align: right; } }
+    @media screen and (min-width: 1280px) {
+      .card.card--left-img .card__description {
+        max-width: 100%; } }
   .card.card--left-img .card__heading {
     text-align: center; }
     @media screen and (min-width: 1024px) {
