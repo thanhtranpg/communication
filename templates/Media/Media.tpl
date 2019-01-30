@@ -62,7 +62,11 @@
                         <a href="javascript:changetab('tab_image');">Image</a>
                     </li>
                     <li class="tab tab_video">
+                        {if $first_video}
                         <a href="javascript:changetab('tab_video');">Video</a>
+                        {else}
+                        <a href="javascript:void(0);">Video</a>
+                        {/if}
                     </li>
                 </ul>
             </div>

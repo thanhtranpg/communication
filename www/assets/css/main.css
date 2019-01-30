@@ -2181,8 +2181,8 @@ nav.nav {
         width: 100%; }
       .modal-media__content .library .col-8 img {
         width: 100%;
-        -o-object-fit: cover;
-           object-fit: cover;
+        -o-object-fit: contain;
+           object-fit: contain;
         z-index: 55; }
     .modal-media__content .library .col-4 {
       width: 100%; }
