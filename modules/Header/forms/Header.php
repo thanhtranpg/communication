@@ -32,7 +32,7 @@ class HeaderForm extends Form
             case 'service':
               $menuArr[2]['class'] = 'active';
               break;
-            case 'our-work':
+            case 'our_work':
               $menuArr[3]['class'] = 'active';
               break;
             case 'career':
