@@ -16,11 +16,17 @@ body, p, h1, h2, h3, h4, h5, figure, ul, li, a {
   list-style: none;
   text-decoration: none; }
 
+
+.redtext {
+        color: red;
+}
+
 body {
   font-family: "Maison Neue";
   font-size: 14px; }
 
 .sub-title, .title, .header-title {
+  color: red;
   font-size: 20px;
   line-height: 1.6; }
   @media screen and (min-width: 768px) {

@@ -19,10 +19,10 @@
     </section>
     <section class="card-title" data-aos="fade-up">
         <div class="card-title__container">
-            <h3 class="sub-heading card-title__heading heading--underline">OUR MISSIONS</h3>
+            <h3 class="sub-heading card-title__heading heading--underline">OUR MISSION</h3>
             <div class="p card-title__description">
-                Create values for clients<br/>
-                Enhance capacity for staffs.
+                <font color="red">Enhance capacity</font> for staff<br/>
+                <font color="red">Create values</font> for clients.
             </div>
         </div>
     </section>
@@ -57,12 +57,11 @@
     <section class="card-value">
         <div class="card-value__container">
             <div class="card-value__inner">
-                <div class="card-value__heading" data-aos="fade-up">
-                    <h3 class="sub-heading">OUR VALUES</h3>
-                </div>
+                
                 <div class="card-value__content">
+                    <h3 class="sub-heading card-title__heading heading--underline" style="text-align: center;" data-aos="fade-up">OUR VALUES</h3>
                     <div class="card-value__block" data-aos="fade-up">
-                        <figure class="card-value__figure small-img" style="background-image: url('/www/assets/imgs/AboutUs/Icon/care.png')"></figure>
+                        <!-- <figure class="card-value__figure small-img" style="background-image: url('/www/assets/imgs/AboutUs/Icon/care.png')"></figure> -->
                         <h5 class="card-value__title sub-title">
                             CUSTOMER CARE
                         </h5>
@@ -71,7 +70,7 @@
                         </div>
                     </div>
                     <div class="card-value__block" data-aos="fade-up">
-                        <figure class="card-value__figure small-img" style="background-image: url('/www/assets/imgs/AboutUs/Icon/deli.png')"></figure>
+                        <!-- <figure class="card-value__figure small-img" style="background-image: url('/www/assets/imgs/AboutUs/Icon/deli.png')"></figure> -->
                         <h5 class="card-value__title sub-title">
                             DELIVERING RESULTS
                         </h5>
@@ -80,7 +79,7 @@
                         </div>
                     </div>
                     <div class="card-value__block" data-aos="fade-up">
-                        <figure class="card-value__figure small-img" style="background-image: url('/www/assets/imgs/AboutUs/Icon/cost.png')"></figure>
+                        <!-- <figure class="card-value__figure small-img" style="background-image: url('/www/assets/imgs/AboutUs/Icon/cost.png')"></figure> -->
                         <h5 class="card-value__title sub-title">
                             COST EFFECTIVE
                         </h5>
