@@ -2412,10 +2412,12 @@ nav.nav {
   @media screen and (min-width: 1024px) {
     .header__item a:hover {
       transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+      -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.23, 1); /* Safari */
       background-position: 0%; } }
   .header__item a.active {
     color: #ff0000;
-    -webkit-text-fill-color: unset; }
+    /*-webkit-text-fill-color: unset; */
+  }
 
 .header__social {
   margin-right: 20px;
