@@ -40,7 +40,7 @@
             <div class="">
                 {$pagingData}
             </div>
-            <div class="tabs" style="padding: 0px; margin: 0px; margin-top: 20px;margin-bottom: 20px " data-aos="fade-up">
+            <div class="tabs" style="padding: 0px; margin: 0px; margin-top: 40px;margin-bottom: 20px " data-aos="fade-up">
                 <div class="small-container tabs__container" style="max-width: 100%">
                   <span class="tabs__name " >
                       <a href="{$ourwork_link}" class="link-menu" >All</a>
