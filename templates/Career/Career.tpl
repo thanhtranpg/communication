@@ -19,7 +19,14 @@
     </section>
     <section class="card-job">
         <div class="small-container card-job__container">
-            <h3 class="card-job__heading sub-heading heading--underline" data-aos="fade-up">OPEN POSITIONS</h3>
+
+            {if $careers|@count le 0}
+                        <h3 class="card-job__heading sub-heading heading--underline" data-aos="fade-up">0 POSITION OPENING</h3>
+
+        {else}
+                    <h3 class="card-job__heading sub-heading heading--underline" data-aos="fade-up">OPEN POSITIONS</h3>
+                     {/if}
+
             <div class="card-job__list">
                 {foreach from=$careers name=career item=career}
                     <div class="card-job__item" data-aos="fade-up">

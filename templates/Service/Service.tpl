@@ -21,9 +21,7 @@
         <div class="card-title__container">
             <h3 class="sub-heading card-title__heading heading--underline">EVENT & ACTIVATION</h3>
             <div class="p card-title__description">
-                We provide our clients with various BTL services of event  management.
-                At ST Communications, we attach ultimate care and highest caution to
-                any project that we implement.
+                We provide our clients with various BTL services of event management. We work toward excellent execution for any projects that we implement.
             </div>
         </div>
     </section>
