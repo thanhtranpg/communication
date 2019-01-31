@@ -40,6 +40,18 @@
             <div class="">
                 {$pagingData}
             </div>
+            <div class="tabs" style="padding: 0px; margin: 0px; margin-top: 20px;margin-bottom: 20px " data-aos="fade-up">
+                <div class="small-container tabs__container" style="max-width: 100%">
+                  <span class="tabs__name " >
+                      <a href="{$ourwork_link}" class="link-menu" >All</a>
+                  </span>
+                  {foreach from=$ourwork_cats name=ourwork_cat item=ourwork_cat}
+                    <span class="tabs__name {if $catid == $ourwork_cat.catid} tabs__name--active {/if}" >
+                      <a href="{$ourwork_cat.href}"  class="link-menu" >{$ourwork_cat.title}</a>
+                    </span>
+                {/foreach}
+                </div>
+            </div>
         </div>
     </div>
 </div>

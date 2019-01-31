@@ -82,6 +82,7 @@
 		  }
 		}
     	$('#close_media').click(function(){
+            $('#video-id').attr('src', '');
 		    $('#myModalMedia').hide();
 		 })
     	function changetab(tabClickEvent){

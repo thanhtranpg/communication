@@ -22,7 +22,7 @@ class View_our_workForm extends Form{
 	function draw(){
 		global $display;
     $catid = System::getParamInt('catid');
-		$where = ' Where status = 1';
+	$where = ' Where status = 1';
     $where .= ' and catid = '.$catid;
     $page_no = (System::getParamInt('page_no') == 0) ? 1 : System::getParamInt('page_no');
 
@@ -47,10 +47,30 @@ class View_our_workForm extends Form{
               }
             }
         }
-    $display->add('pagingData', $pagingData);
-    $display->add('ourworks', $ourworks);
-		$display->add('banner',$this->banner);
-    $display->add('ourwork_corver',$ourwork_corver);
+
+        $where = ' Where status =1 ';
+        $sql = "SELECT * FROM " . PREFIX_TABLE . "ourwork_cat $where ORDER BY ord asc ";
+        $result = DB::query($sql);
+        $product_cat=array();
+        if ($result)
+        {
+            while ($row = mysql_fetch_assoc($result)){
+                $row['href'] = Url::build('our_work', array('catid' => $row['catid'], 'xtname' =>
+                                System::safe_title($row['title'])));
+                $row['title'] = System::post_db_parse_html($row['title']);
+                $sql_ourwork = "SELECT title, image FROM " . PREFIX_TABLE . "ourwork Where status =1 and catid = ".$row['catid']." ORDER BY ord desc ";
+            $result_ourwork = DB::query($sql_ourwork);
+            $product_cat[]=$row;
+            }
+           
+          }
+
+        $display->add('catid', $catid);
+        $display->add('ourwork_cats', $product_cat);
+        $display->add('pagingData', $pagingData);
+        $display->add('ourworks', $ourworks);
+    	$display->add('banner',$this->banner);
+        $display->add('ourwork_corver',$ourwork_corver);
 		$display->output('View_our_work');
 	}
 	
