@@ -86,7 +86,7 @@
 		    $('#myModalMedia').hide();
 		 })
     	function changetab(tabClickEvent){
-    		console.log(tabClickEvent);
+    		
 			var myTabs = document.querySelectorAll("ul.nav-tabs > li");
 			$("ul.nav-tabs > li").removeClass('active');
 			$("."+ tabClickEvent ).addClass('active');
@@ -95,6 +95,9 @@
 				$("#video").addClass('active');
 			}else{
 				$("#image").addClass('active');
+                var link_video = $('#video-id').attr('src');
+                console.log(link_video);
+                $('#video-id').attr('src', link_video);
 			}
 			
 		    
@@ -138,6 +141,7 @@ $(document).ready(function(){
     var title = $(this).attr('data-title');
     $('.media_title').html(title);
     $('#id-img').attr('src', link);
+
   });
 });
     </script>
