@@ -2416,7 +2416,7 @@ nav.nav {
       background-position: 0%; } }
   .header__item a.active {
     color: #ff0000;
-    /*-webkit-text-fill-color: unset; */
+    -webkit-text-fill-color: unset; 
   }
 
 .header__social {

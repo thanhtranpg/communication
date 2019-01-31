@@ -57,34 +57,35 @@
     <section class="card-value">
         <div class="card-value__container">
             <div class="card-value__inner">
-                
+                <div class="card-value__heading" data-aos="fade-up">
+                    <h3 class="sub-heading">OUR VALUES</h3>
+                </div>
                 <div class="card-value__content">
-                    <h3 class="sub-heading card-title__heading heading--underline" style="text-align: center;" data-aos="fade-up">OUR VALUES</h3>
                     <div class="card-value__block" data-aos="fade-up">
-                        <!-- <figure class="card-value__figure small-img" style="background-image: url('/www/assets/imgs/AboutUs/Icon/care.png')"></figure> -->
+                        <figure class="card-value__figure small-img" style="background-image: url('/www/assets/imgs/AboutUs/Icon/deli.png')"></figure>
                         <h5 class="card-value__title sub-title">
-                            CUSTOMER CARE
+                            TRUST
                         </h5>
                         <div class="p card-value__description">
-                            We take ultimate care for our customers
+                            We build customers trust in our people and our services
                         </div>
                     </div>
                     <div class="card-value__block" data-aos="fade-up">
-                        <!-- <figure class="card-value__figure small-img" style="background-image: url('/www/assets/imgs/AboutUs/Icon/deli.png')"></figure> -->
+                        <figure class="card-value__figure small-img" style="background-image: url('/www/assets/imgs/AboutUs/Icon/care.png')"></figure>
                         <h5 class="card-value__title sub-title">
-                            DELIVERING RESULTS
+                            ACCOUNTABILITY
                         </h5>
                         <div class="p card-value__description">
-                            Actual deliverables of a any projects we implement have always gone far beyond the planned deliverables
+                            We take highest responsibilities for any projects
                         </div>
                     </div>
                     <div class="card-value__block" data-aos="fade-up">
-                        <!-- <figure class="card-value__figure small-img" style="background-image: url('/www/assets/imgs/AboutUs/Icon/cost.png')"></figure> -->
+                        <figure class="card-value__figure small-img" style="background-image: url('/www/assets/imgs/AboutUs/Icon/cost.png')"></figure>
                         <h5 class="card-value__title sub-title">
-                            COST EFFECTIVE
+                            SOLUTIONS
                         </h5>
                         <div class="p card-value__description">
-                            We can help save the “pocket” for our customers through applying the smartest and the most cost effective methods
+                            We talk solutions not problems
                         </div>
                     </div>
                 </div>
