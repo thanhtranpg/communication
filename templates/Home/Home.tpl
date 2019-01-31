@@ -20,7 +20,7 @@
 <div class="page-home">
         <section class="hero hero--video">
             <div class="hero__container">
-                <figure class="figure hero__figure" style="background-image: url('/www/assets/imgs/Festival/MaskGroup47.png')"></figure>
+                <figure class="figure hero__figure" style="background-image: url('/uploads/{$row_solution.image}')"></figure>
                 <div class="hero__video"> 
                     <div class="tv">
                         <div class="screen mute" id="tv" _youtubeID="{$youtube_id_background}" _endSeconds="{$endSecond}" ></div>

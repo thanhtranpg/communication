@@ -29,6 +29,15 @@ class HomeForm extends Form{
            $display->add('row_conact',$row_conact);
         }
 
+        $sql_solution = "SELECT * FROM ".PREFIX_TABLE."adv WHERE status = 1 and catid=8  ORDER BY ord Desc limit 1";
+        $arr_solution = DB::query($sql_solution);   
+
+        if (!empty($arr_solution))
+        {
+          while ($row_solution = mysql_fetch_assoc($arr_solution)) 
+           $display->add('row_solution',$row_solution);
+        }
+
         
         $where = ' Where status =1 ';
         $sql = "SELECT * FROM " . PREFIX_TABLE . "ourwork_cat $where ORDER BY ord asc ";
