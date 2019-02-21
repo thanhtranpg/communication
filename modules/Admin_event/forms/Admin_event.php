@@ -1,7 +1,7 @@
 <?php
 class Admin_eventForm extends Form{
 	private $catid = 12;
-	function Admin_carrertForm(){
+	function Admin_eventForm(){
 		Form::Form('Admin_eventForm');	
 		if(!CGlobal::$is_adminpage){
 			Url::redirect();
@@ -50,37 +50,22 @@ class Admin_eventForm extends Form{
 	}
 	
 	function edit(){
-		global $display;
 		$img_folder = 'event';
-		
+		$id = System::getParamInt('id');
 		$arr = $_POST;
-		$id = $arr['id'];
 		unset($arr['form_block']);
-		unset($arr['id']);
-		unset($arr['cmd']);
 		if(isset($arr['old_image'])) unset($arr['old_image']);
 		
 		$arr['title'] = System::getParam('title');
-		$arr['catid'] = $this->catid;
+		
 		if($_FILES['image']['name']){					
 			$old_image = System::getParam('old_image');
 			if($old_image) @unlink(DIR_UPLOAD.$img_folder.'/'.$old_image);
 			$arr["image"] = $img_folder.'/'.ImageUrl::UploadFile($_FILES['image'],$img_folder,$id);	
 		}
-		if(!empty($id)){
-			$item=DB::select(PREFIX_TABLE."adv", "id =".$id);
-		}
-
-		if(!empty($item)){
-			$is_update = DB::update(PREFIX_TABLE."adv",$arr,"id = $id");
-		}else{ 
-			$is_update = DB::insert(PREFIX_TABLE."adv",$arr);
-		}
-		
+		$is_update = DB::update(PREFIX_TABLE."adv",$arr,"id = $id");
 		if($is_update){
-			$this->setFormError('tbao',"Cập nhật thành công!");
-			$display->add('msg',$this->showFormErrorMessages(1));
-			Url::redirect_url('webadmin.php?main='.CGlobal::$main.'&cmd=edit');
+			Url::redirect_url('webadmin.php?main='.CGlobal::$main.'&cmd=list');
 		}else {
 			$this->setFormError('tbao',"Không cập nhật được CSDL, mời bạn thử lại!");
 			$display->add('msg',$this->showFormErrorMessages(1));
@@ -113,9 +98,12 @@ class Admin_eventForm extends Form{
 			case 'add':
 			case 'edit':				
 				$id = System::getParamInt('id');
-				if($this->catid){									
-					$item=DB::select(PREFIX_TABLE."adv", "catid =".$this->catid);
-					
+				if($id){									
+					$item=DB::select(PREFIX_TABLE."adv", "id = $id");
+					if(empty($item)){
+						$this->setFormError('tbao',"ID không tồn tại!");
+						$display->add('msg',$this->showFormErrorMessages(1));
+					}
 				}else {
 					$item = array(
 							'id'		=>'',
@@ -123,8 +111,7 @@ class Admin_eventForm extends Form{
 							'title'		=>'',
 							'link'		=>'',							
 							'type'	=>'',							
-							'image'		=>'',
-							'description'		=>'',																		
+							'image'		=>'',																		
 							'ord'		=>'',																		
 							'status'	=>1
 							);

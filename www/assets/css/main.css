@@ -615,10 +615,10 @@ a[href^="tel"] {
       max-width: 600px; } }
   @media screen and (min-width: 1024px) {
     .hero-image__inner {
-      max-width: 800px; } }
+      max-width: 1000px; } }
   @media screen and (min-width: 1440px) {
     .hero-image__inner {
-      max-width: 900px; } }
+      max-width: 1400px; } }
   .hero-image__inner .hero-image__sub-figure:before {
     padding-top: 56.36856%; }
 
@@ -811,7 +811,7 @@ a[href^="tel"] {
       padding: 90px 0 180px; } }
 
 .block-event__container {
-  max-width: 500px; }
+  max-width: 600px; }
 
 .block-event__heading {
   margin-bottom: 30px;
@@ -2576,3 +2576,24 @@ nav.nav {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
     background-color: #ffffff; }
+.hero-image__inner{
+  display: flex;
+}
+#event_prev{
+  color: #d1cdcd;
+  font-size: 100px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+#event_image{
+  
+  display: block;
+}
+#event_next{
+  color: #d1cdcd;
+  font-size: 100px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+}

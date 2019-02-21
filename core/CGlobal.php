@@ -36,6 +36,7 @@ class CGlobal{
                             7 => array('title'=>'Our Works', 'w'=>'1920','h'=>'1080'),
                             8 => array('title'=>'Contact Us in Home', 'w'=>'1920','h'=>'1080'),
                             9 => array('title'=>'SOLUTIONS & TRUST Top in Home', 'w'=>'1920','h'=>'1080'),
+                            20 => array('title'=>'Event', 'w'=>'1920','h'=>'1080'),
 						);	
 						
 			
