@@ -9,11 +9,12 @@
                     width: 1000,
                     customOptions: {
                         rel: 0,
-                        end: 60
+                        
                     }
                 });
                 $("#video2").videoPopup();
             });
+            //end: 60
         </script>
 {/literal}
 
